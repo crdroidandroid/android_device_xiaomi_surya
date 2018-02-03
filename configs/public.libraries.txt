@@ -5,7 +5,6 @@ libalhLDC.so
 libcdsprpc.so
 libHalSuperSensorServer.so
 libOpenCL.so
-libqti-perfd-client.so
 libsdsprpc.so
 libSuperSensorCPU.so
 libSuperSensor.so
