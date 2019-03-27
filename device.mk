@@ -333,7 +333,8 @@ PRODUCT_ENFORCE_RRO_TARGETS += *
 PRODUCT_PACKAGES += \
     KarnaPowerProfile \
     KarnaSettingsProviderOverlay \
-    SuryaSettingsProviderOverlay
+    SuryaSettingsProviderOverlay \
+    NotchBarKillerSurya
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
