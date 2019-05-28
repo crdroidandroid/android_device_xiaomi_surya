@@ -50,3 +50,6 @@ if [ ! -f /vendor/firmware_mnt/verinfo/ver_info.txt -o "$prev_version_info" != "
 fi
 chmod g-w /data/vendor/modem_config
 setprop ro.vendor.ril.mbn_copy_completed 1
+
+# Clear packages_cache to avoid systemapp have mismatch strings id
+rm -rf /data/system/package_cache
