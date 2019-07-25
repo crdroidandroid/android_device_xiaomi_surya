@@ -102,6 +102,9 @@ camera.disable_zsl_mode=1
 ro.soc.manufacturer=QTI
 ro.soc.model=SM7150
 
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Dalvik
 dalvik.vm.systemuicompilerfilter=speed
 
