@@ -66,4 +66,8 @@
         <item>restart_fastboot</item>
         <item>restart_bootloader</item>
     </string-array>
+
+    <!-- Proximity check on screen wake -->
+    <bool name="config_proximityCheckOnWake">true</bool>
+    <integer name="config_proximityCheckTimeout">100</integer>
 </resources>
