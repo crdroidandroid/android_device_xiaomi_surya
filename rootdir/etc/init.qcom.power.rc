@@ -30,6 +30,9 @@ on early-init
     write /proc/sys/kernel/sched_energy_aware 0
 
 on init
+    # Disable powersaving
+    write /sys/module/lpm_levels/parameters/sleep_disabled 1
+
     # Create cgroup mount point for memory
     mkdir /sys/fs/cgroup/memory/bg 0750 root system
     write /sys/fs/cgroup/memory/bg/memory.swappiness 140
@@ -172,6 +175,9 @@ on enable-low-power
 
     write /sys/devices/platform/soc/soc:qcom,cpu6-cpu-ddr-latfloor/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/governor "compute"
     write /sys/devices/platform/soc/soc:qcom,cpu6-cpu-ddr-latfloor/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/polling_interval 10
+
+    # Turn on sleep modes
+    write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
     # Enable idle state listener
     write /sys/class/drm/card0/device/idle_encoder_mask 1
