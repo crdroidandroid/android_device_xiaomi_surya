@@ -1,6 +1,7 @@
 allow vendor_init proc_sched_energy_aware:file w_file_perms;
 
 set_prop(vendor_init, vendor_fp_prop)
+set_prop(vendor_init, vendor_power_prop)
 
 # Allow vendor_init to relabel unlabeled files and directories
 allow vendor_init unlabeled:{ dir file } { getattr relabelfrom };

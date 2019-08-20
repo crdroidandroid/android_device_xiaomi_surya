@@ -1,2 +1,0 @@
-# To set powerhal init property
-set_prop(vendor_qti_init_shell, vendor_power_prop)

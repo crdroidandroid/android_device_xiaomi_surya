@@ -27,33 +27,13 @@
 #
 #
 
-on early-init
-    # Disable EAS
-    write /proc/sys/kernel/sched_energy_aware 0
-
 on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
-    write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
-
-    # Boot time fs tuning
-    write /sys/block/sda/queue/iostats 0
-    write /sys/block/sda/queue/scheduler cfq
-    write /sys/block/sda/queue/iosched/slice_idle 0
-    write /sys/block/sda/queue/nr_requests 256
-    write /sys/block/sde/queue/iostats 0
-    write /sys/block/sde/queue/scheduler cfq
-    write /sys/block/sde/queue/iosched/slice_idle 0
-    write /sys/block/sde/queue/nr_requests 256
-
     # ZRAM setup
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
-
-    # Report max frequency to unity tasks
-    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
-    write /proc/sys/kernel/sched_lib_mask_force 255
 
 on init && property:ro.boot.hwname=*
     setprop ro.boot.product.hardware.sku ${ro.boot.hwname}
@@ -104,20 +84,8 @@ on boot
     mkdir /mnt/vendor/persist/goodix 0770 system system
 
 on property:sys.boot_completed=1
-    # Enable EAS
-    write /proc/sys/kernel/sched_energy_aware 1
-
-    # Set allocstall_threshold to 0
-    # Set swappiness to 100
-    write /sys/module/vmpressure/parameters/allocstall_threshold 0
-    write /proc/sys/vm/swappiness 100
-
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.qcom
-
-    # Runtime fs tuning
-    write /sys/block/sda/queue/nr_requests 128
-    write /sys/block/sde/queue/nr_requests 128
 
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
@@ -144,23 +112,6 @@ on property:init.svc.vendor.per_mgr=running
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
-
-on charger
-    wait /dev/block/platform/soc/1da4000.ufshc/by-name/system
-    mount ext4 /dev/block/platform/soc/1da4000.ufshc/by-name/system / ro barrier=1
-
-    wait /dev/block/platform/soc/1da4000.ufshc/by-name/persist
-    mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist nosuid nodev barrier=1
-
-    start vendor.hvdcp_opti
-    start vendor.qcom-post-boot
-    start vendor.power_off_alarm
-
-service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
-    class main
-    user root
-    group system wakelock
-    task_profiles ServiceCapacityLow
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     override
