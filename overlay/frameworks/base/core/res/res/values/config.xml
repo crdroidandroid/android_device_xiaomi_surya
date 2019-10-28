@@ -189,7 +189,6 @@
          should be measured with an all white image while the display is in the fully on state.
          Note that this value should *not* reflect the maximum brightness value for any high
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
-
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
         <item>0</item>
@@ -401,6 +400,12 @@
         <item>evdo:4094,87380,524288,4096,16384,262144</item>
     </string-array>
 
+    <!-- The list of components which should be automatically disabled for a specific package. -->
+    <string-array name="config_disabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+        <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
+    </string-array>
+
     <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
 
@@ -566,22 +571,18 @@
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
          {@link android.util.PathParser}.
-
          The path is assumed to be specified in display coordinates with pixel units and in
          the display's native orientation, with the origin of the coordinate system at the
          center top of the display. Optionally, you can append either `@left` or `@right` to the
          end of the path string, in order to change the path origin to either the top left,
          or top right of the display.
-
          To facilitate writing device-independent emulation overlays, the marker `@dp` can be
          appended after the path string to interpret coordinates in dp instead of px units.
          Note that a physical cutout should be configured in pixels for the best results.
-
          Example for a 10px x 10px square top-center cutout:
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z</string>
          Example for a 10dp x 10dp square top-center cutout:
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
-
          @see https://www.w3.org/TR/SVG/paths.html#PathData
     -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 H -36 V 91 H 36 V 0 H 0 Z</string>
