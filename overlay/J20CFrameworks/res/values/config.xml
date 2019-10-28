@@ -588,4 +588,9 @@
     <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
     <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
 
+    <!-- The list of components which should be automatically disabled for a specific device. -->
+    <string-array name="config_deviceDisabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+    </string-array>
+
 </resources>
