@@ -2,3 +2,6 @@ type persist_subsys_file, vendor_persist_type, file_type;
 type thermal_data_file, file_type, data_file_type;
 type vendor_persist_camera_file, file_type, vendor_persist_type;
 type proc_last_kmsg, file_type;
+
+# Data files
+type per_boot_file, file_type, data_file_type, core_data_file_type;
