@@ -35,7 +35,7 @@ system_ext                                              /system_ext             
 product                                                 /product                 ext4    ro,barrier=1,discard                                 wait,avb,logical,first_stage_mount
 vendor                                                  /vendor                  ext4    ro,barrier=1,discard                                 wait,avb=vbmeta,logical,first_stage_mount
 /dev/block/bootdevice/by-name/cache                     /cache                   ext4    nosuid,noatime,nodev,barrier=1                       wait
-/dev/block/by-name/metadata                             /metadata                ext4    noatime,nosuid,nodev,discard                         wait,check,formattable,first_stage_mount
+/dev/block/by-name/metadata                             /metadata                ext4    noatime,nosuid,nodev,discard                         wait,check,formattable,first_stage_mount,metadata_csum
 /dev/block/bootdevice/by-name/userdata                  /data                    f2fs    noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier,inlinecrypt    latemount,wait,check,formattable,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,quota,reservedsize=128M,sysfs_path=/sys/devices/platform/soc/1d84000.ufshc,checkpoint=fs
 /devices/platform/soc/8804000.sdhci/mmc_host*           /storage/sdcard1         vfat    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto,encryptable=footer
 /devices/platform/soc/1da4000.ufshc_card/host*          /storage/sdcard1         vfat    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto,encryptable=footer
