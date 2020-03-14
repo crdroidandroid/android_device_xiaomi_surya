@@ -187,6 +187,9 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Keystore
+ro.hardware.keystore_desede=true
+
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
