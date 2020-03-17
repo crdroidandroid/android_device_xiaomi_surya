@@ -28,11 +28,13 @@ ro.netflix.bsp_rev=Q6150-17263-1
 # RCS
 persist.rcs.supported=1
 
-# Radio
+# Radio/RIL
 persist.radio.multisim.config=dsds
 persist.radio.NO_STAPA=1
 persist.radio.VT_CAM_INTERFACE=1
 persist.radio.VT_HYBRID_ENABLE=1
+persist.vendor.ims.disableADBLogs=1
+persist.vendor.ims.disableIMSLogs=1
 ril.subscription.types=RUIM
 ro.telephony.default_cdma_sub=0
 telephony.lteOnCdmaDevice=1
