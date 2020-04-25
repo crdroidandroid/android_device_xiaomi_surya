@@ -11,6 +11,9 @@ ro.charger.enable_suspend=true
 # CNE
 persist.vendor.cne.feature=1
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
