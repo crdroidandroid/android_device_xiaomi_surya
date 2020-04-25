@@ -7,6 +7,9 @@ vendor.camera.aux.packagelist=com.android.camera
 # Charger
 ro.charger.enable_suspend=true
 
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
