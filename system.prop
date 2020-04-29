@@ -32,7 +32,6 @@ persist.radio.VT_CAM_INTERFACE=1
 persist.radio.VT_HYBRID_ENABLE=1
 ril.subscription.types=RUIM
 ro.telephony.default_cdma_sub=0
-ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 
 # Recovery
