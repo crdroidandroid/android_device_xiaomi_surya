@@ -69,5 +69,5 @@
 
     <!-- Proximity check on screen wake -->
     <bool name="config_proximityCheckOnWake">true</bool>
-    <integer name="config_proximityCheckTimeout">100</integer>
+    <integer name="config_proximityCheckTimeout">3000</integer>
 </resources>
