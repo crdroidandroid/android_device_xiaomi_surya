@@ -132,6 +132,7 @@ persist.vendor.dpmhalservice.enable=1
 
 # Display
 debug.sf.use_phase_offsets_as_durations=1
+debug.sf.disable_client_composition_cache=1
 debug.sf.late.sf.duration=10500000
 debug.sf.late.app.duration=16600000
 debug.sf.early.sf.duration=16600000
