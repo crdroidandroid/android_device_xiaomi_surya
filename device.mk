@@ -317,6 +317,9 @@ PRODUCT_PACKAGES += \
     KarnaPowerProfile \
     NotchBarKiller
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
