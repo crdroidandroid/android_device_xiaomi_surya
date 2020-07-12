@@ -335,6 +335,9 @@ PRODUCT_PACKAGES += \
     SuryaPowerProfile \
     SuryaSettingsProviderOverlay
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
