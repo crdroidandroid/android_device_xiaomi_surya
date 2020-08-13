@@ -5,7 +5,7 @@ vendor.voice.path.for.pcm.voip=false
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
-ro.soc.model=SM7150
+ro.soc.model=SDM7150
 
 # HVDCP
 persist.vendor.cp.taper_term_mv=6500
