@@ -61,6 +61,10 @@ on init
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
 
+    # report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
 on init && property:ro.boot.hwname=*
     setprop ro.boot.product.hardware.sku ${ro.boot.hwname}
 
