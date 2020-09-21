@@ -78,4 +78,7 @@
     <bool name="config_proximityCheckOnWake">true</bool>
     <integer name="config_proximityCheckTimeout">3000</integer>
     <bool name="config_proximityCheckOnWakeEnabledByDefault">false</bool>
+
+    <!-- Whether device has smaller dot/u/u notch -->
+    <bool name="config_haveDotNotch">true</bool>
 </resources>
