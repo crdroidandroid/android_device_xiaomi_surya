@@ -148,6 +148,7 @@ PRODUCT_PACKAGES += \
     memtrack.sm6150
 
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor
 
 PRODUCT_PACKAGES += \
