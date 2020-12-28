@@ -1,3 +1,6 @@
+# Audio
+ro.config.media_vol_default=10
+
 # Blur
 persist.sys.sf.disable_blurs=1
 ro.surface_flinger.supports_background_blur=1
