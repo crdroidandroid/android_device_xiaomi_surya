@@ -7,9 +7,6 @@ vendor.camera.aux.packagelist=com.android.camera
 # Charger
 ro.charger.enable_suspend=true
 
-# CNE
-persist.vendor.cne.feature=1
-
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true

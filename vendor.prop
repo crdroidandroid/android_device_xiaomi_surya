@@ -103,6 +103,9 @@ camera.disable_zsl_mode=1
 ro.soc.manufacturer=QTI
 ro.soc.model=SM7150
 
+# CNE
+persist.vendor.cne.feature=1
+
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
