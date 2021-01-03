@@ -8,9 +8,6 @@ persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,org
 # Charger
 ro.charger.enable_suspend=true
 
-# CNE
-persist.vendor.cne.feature=1
-
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 

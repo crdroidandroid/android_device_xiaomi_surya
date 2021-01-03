@@ -102,6 +102,9 @@ vendor.qcom.bluetooth.soc=cherokee
 # Camera
 camera.disable_zsl_mode=1
 
+# CNE
+persist.vendor.cne.feature=1
+
 # Data modules
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
