@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+BOARD_VENDOR := xiaomi
+
 DEVICE_PATH := device/xiaomi/davinci
 
 # Inherit from proprietary files
