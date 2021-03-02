@@ -1,2 +1,6 @@
 # allow system apps to read battery status
 r_dir_file(system_app, sysfs_battery_supply)
+
+# Allow theme_prop to be read and set by Settings
+get_prop(system_app, theme_prop)
+set_prop(system_app, theme_prop)

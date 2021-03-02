@@ -5,3 +5,5 @@ allow platform_app sysfs_graphics:file r_file_perms;
 
 # Notch
 get_prop(platform_app, vendor_display_notch_prop)
+
+get_prop(platform_app, theme_prop)
