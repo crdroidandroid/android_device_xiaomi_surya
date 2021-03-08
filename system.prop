@@ -7,6 +7,9 @@ ro.charger.enable_suspend=true
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
