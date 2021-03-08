@@ -147,6 +147,13 @@ vendor.display.enable_optimize_refresh=1
 vendor.gralloc.disable_ubwc=0
 vendor.display.qdcm.mode_combine=1
 
+# Display - Dynamic refresh rate
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=200
+ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+vendor.display.idle_time=1100
+
 # Display - Set color mode to Adaptive by default
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
