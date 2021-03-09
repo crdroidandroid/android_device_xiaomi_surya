@@ -170,6 +170,11 @@ service vendor.remosaic_daemon /vendor/bin/remosaic_daemon
     group camera
     writepid /dev/cpuset/system-background/tasks
 
+service mi_thermald /vendor/bin/mi_thermald
+    class core
+    user root
+    group system
+
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     override
     class hal
