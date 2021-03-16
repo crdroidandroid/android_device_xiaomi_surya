@@ -160,6 +160,8 @@ vendor/lib64/libFaceGrade.so
 vendor/lib64/libft2vendor.so
 vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libhvx_interface.so
+vendor/lib64/libmegface.so
+vendor/lib64/libMegviiFacepp-0.5.2.so
 vendor/lib64/libmiai_portraitsupernight.so
 vendor/lib64/libmiai_supernight.so
 vendor/lib64/libmialgo_basic.so
@@ -277,6 +279,7 @@ vendor/etc/camera/almalence_sr_params_tele.config
 vendor/etc/camera/almalence_sr_params_wide.config
 vendor/etc/camera/beauty_ui9_intelligent_params.config
 vendor/etc/camera/body_slim_ui9_params.config
+vendor/etc/camera/megviifacepp_0_5_2_model
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/CFR_para_M_V07.bin
 vendor/etc/camera/CFR_para_M_V10.bin
