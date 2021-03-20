@@ -65,6 +65,9 @@ on init
     write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
 
+    chown system system /proc/tp_gesture
+    chmod 0644 /proc/tp_gesture
+
 on init && property:ro.boot.hwname=*
     setprop ro.boot.product.hardware.sku ${ro.boot.hwname}
 
