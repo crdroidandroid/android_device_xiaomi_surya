@@ -156,10 +156,9 @@ persist.sys.sf.color_mode=9
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # HVDCP
+persist.vendor.cp.fcc_main_ua=400000
 persist.vendor.cp.taper_term_mv=6500
-persist.vendor.qg_cld_coff_gain=1.5
-persist.vendor.qg_coff_gain=1
-persist.vendor.qg_cold_temp=-150
+persist.vendor.cp.vbus_offset_mv=1040
 
 # IMS
 persist.dbg.volte_avail_ovr=1
