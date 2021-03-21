@@ -1,6 +1,9 @@
 # Audio
 /dev/socket/audio_hw_socket                                          u:object_r:audio_socket:s0
 
+# Battery secret
+/vendor/bin/batterysecret                                            u:object_r:batterysecret_exec:s0
+
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                     u:object_r:camera_persist_file:s0
 
@@ -15,6 +18,10 @@
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.surya u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.surya          u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr   u:object_r:hal_power_default_exec:s0
+
+
+# Persist subsystem
+/mnt/vendor/persist/subsys(/.*)?                                     u:object_r:persist_subsys_file:s0
 
 # Remosaic
 /vendor/bin/remosaic_daemon                                          u:object_r:remosaic_daemon_exec:s0
