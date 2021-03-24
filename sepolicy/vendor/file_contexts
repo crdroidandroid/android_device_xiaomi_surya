@@ -19,6 +19,8 @@
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.surya          u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr   u:object_r:hal_power_default_exec:s0
 
+# IR
+/dev/spidev0.1                                                       u:object_r:spidev_device:s0
 
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                                     u:object_r:persist_subsys_file:s0
