@@ -6,6 +6,7 @@ camera.sensor.frontMain.fuseID     u:object_r:vendor_camera_prop:s0
 camera.sensor.rearUltra.fuseID     u:object_r:vendor_camera_prop:s0
 camera.sensor.rearTele.fuseID      u:object_r:vendor_camera_prop:s0
 persist.camera.                    u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.mi.module.   u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
 gf.debug.                          u:object_r:vendor_fp_prop:s0
