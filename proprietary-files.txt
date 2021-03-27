@@ -651,6 +651,9 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
+# IR
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
+
 # IRQ balance
 vendor/bin/msm_irqbalance
 
