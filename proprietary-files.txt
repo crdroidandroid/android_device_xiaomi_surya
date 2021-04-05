@@ -349,10 +349,6 @@ vendor/lib64/libtinyxml2_1.so
 # Display - from NX627J 20201029.204053
 vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
 
-# Display calibration - from MIUI 12.0.3
-vendor/etc/qdcm_calib_data_ss_ea_fhd_cmd_dsi_panel.xml|4c8c166bba6ef7de86d7ab3c722dc7afc8e18a8d
-vendor/etc/qdcm_calib_data_ss_eb_fhd_cmd_dsi_panel.xml|9592ec2725e2be9b43a13d7ba87ef2a10ba5e249
-
 # DPM
 framework/tcmclient.jar
 system_ext/bin/dpmd
