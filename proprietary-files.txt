@@ -309,6 +309,10 @@ vendor/etc/camera/watermark_font_2300_3199.dat
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# Camera provider
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+
 # Camera sensors
 vendor/lib64/camera/com.qti.sensormodule.j20c_aac_gc02m1b_depth.bin
 vendor/lib64/camera/com.qti.sensormodule.j20c_aac_hi1337_ultra.bin
