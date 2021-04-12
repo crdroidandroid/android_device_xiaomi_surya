@@ -67,6 +67,9 @@ on init && property:ro.boot.hwname=*
 on property:ro.boot.product.hardware.sku=surya
     enable vendor.nfc_hal_service
 
+on property:ro.boot.hwversion=*
+    setprop vendor.boot.hwversion ${ro.boot.hwversion}
+
 on fs
     mount_all --early
 
