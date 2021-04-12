@@ -128,7 +128,8 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 ro.crypto.volume.options=::v2
 
 # Data modules
-ro.telephony.iwlan_operation_mode=legacy
+persist.vendor.data.iwlan.enable=true
+persist.vendor.data.mode=concurrent
 
 # DPM
 persist.vendor.dpm.feature=1
