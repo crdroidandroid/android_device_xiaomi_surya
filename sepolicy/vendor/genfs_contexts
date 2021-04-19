@@ -35,3 +35,6 @@ genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-1/1-0049/wakeup             
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0066/wakeup                                                                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0066/power_supply/bq2597x-standalone/wakeup                                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/wakeup                                                                                                      u:object_r:sysfs_wakeup:s0
+
+# Power
+genfscon proc /sys/kernel/sched_energy_aware u:object_r:proc_sched_energy_aware:s0
