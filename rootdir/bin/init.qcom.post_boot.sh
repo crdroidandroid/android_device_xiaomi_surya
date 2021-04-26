@@ -195,6 +195,9 @@ case "$target" in
     ;;
 esac
 
+# Enable EAS
+echo 1 > /proc/sys/kernel/sched_energy_aware
+
 # Enable PowerHAL hint processing
 setprop vendor.powerhal.init 1
 
