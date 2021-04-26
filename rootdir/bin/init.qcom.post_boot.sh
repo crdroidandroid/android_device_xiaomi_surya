@@ -82,11 +82,6 @@ case "$target" in
     "sm6150")
 
     # Apply settings for sm6150
-    # Set the default IRQ affinity to the silver cluster. When a
-    # CPU is isolated/hotplugged, the IRQ affinity is adjusted
-    # to one of the CPU from the default IRQ affinity mask.
-    echo 3f > /proc/irq/default_smp_affinity
-
     # Setting b.L scheduler parameters
     echo 25 > /proc/sys/kernel/sched_downmigrate_boosted
     echo 25 > /proc/sys/kernel/sched_upmigrate_boosted
