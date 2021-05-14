@@ -1,0 +1,4 @@
+type sysfs_iio, fs_type, sysfs_type;
+allow hal_power_stats_default sysfs_iio:dir r_dir_perms;
+allow hal_power_stats_default sysfs_iio:file r_file_perms;
+allow hal_power_stats_default sysfs_iio:lnk_file read;
