@@ -45,4 +45,6 @@ ro.miui.                           u:object_r:build_prop:s0
 ro.product.mod_device              u:object_r:build_prop:s0
 
 # Xiaomi thermal daemon
+persist.sys.thermal.               u:object_r:vendor_thermal_normal_prop:s0
+sys.thermal.                       u:object_r:vendor_thermal_normal_prop:s0
 vendor.sys.thermal.                u:object_r:vendor_thermal_normal_prop:s0
