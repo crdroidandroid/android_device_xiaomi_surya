@@ -1,4 +1,6 @@
 type proc_sched_energy_aware, proc_type, fs_type;
+type sysfs_touchpanel, fs_type, sysfs_type;
+
 vendor_internal_prop(vendor_power_prop)
 
 allow hal_power_default input_device:dir r_dir_perms;
@@ -9,6 +11,8 @@ allow hal_power_default cgroup:dir search;
 allow hal_power_default cgroup:file rw_file_perms;
 allow hal_power_default proc_sched_energy_aware:file rw_file_perms;
 allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
+allow hal_power_default sysfs_touchpanel:dir search;
+allow hal_power_default sysfs_touchpanel:file rw_file_perms;
 allow hal_power_default vendor_latency_device:chr_file rw_file_perms;
 allow hal_power_default vendor_sysfs_devfreq:dir search;
 allow hal_power_default vendor_sysfs_devfreq:file rw_file_perms;
