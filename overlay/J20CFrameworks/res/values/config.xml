@@ -576,4 +576,7 @@
     <!-- Maximum color temperature, in Kelvin, supported by Night display. -->
     <integer name="config_nightDisplayColorTemperatureMax">5000</integer>
 
+    <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/bms/fastcharge_mode</string>
+
 </resources>
