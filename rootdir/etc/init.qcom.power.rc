@@ -90,6 +90,9 @@ on property:init.svc.vendor.charger=running
     wait /dev/block/platform/soc/1da4000.ufshc/by-name/persist
     mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist nosuid nodev barrier=1
 
+    chown system system /sys/class/leds/white/brightness
+    write /sys/class/leds/white/brightness 255
+
     start vendor.hvdcp_opti
     start vendor.power_off_alarm
 
