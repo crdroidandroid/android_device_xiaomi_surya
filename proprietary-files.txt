@@ -370,6 +370,7 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # Charger
 vendor/bin/hvdcp_opti
+system/system/bin/charger:bin/chargeonlymode
 
 # CNE
 -vendor/app/CneApp/CneApp.apk
