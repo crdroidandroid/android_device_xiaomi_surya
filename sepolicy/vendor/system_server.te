@@ -1,1 +1,2 @@
 allow system_server proc_last_kmsg:file { open read getattr };
+allow system_server vendor_sysfs_battery_supply:file r_file_perms;
