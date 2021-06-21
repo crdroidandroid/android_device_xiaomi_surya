@@ -27,12 +27,13 @@ allow devicesettings_app system_app_data_file:{ file lnk_file } create_file_perm
 # Allow binder communication with gpuservice
 binder_call(devicesettings_app, gpuservice)
 
-# Allow devicesettings_app to read and write to cgroup/sysfs_leds/sysfs_thermal
-allow devicesettings_app sysfs_leds:dir search;
+# Allow devicesettings_app to read and write to cgroup/sysfs_leds/sysfs_thermal/sysfs_vibrator
+allow devicesettings_app {sysfs_leds sysfs_vibrator}:dir search;
 allow devicesettings_app {
   cgroup
   sysfs_leds
   sysfs_thermal
+  sysfs_vibrator
 }:{ file lnk_file } rw_file_perms;
 
 # Allow devicesettings_app read default props

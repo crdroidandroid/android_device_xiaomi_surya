@@ -197,6 +197,10 @@ on post-fs-data
 
     setprop vold.post_fs_data_done 1
 
+    # Allow system to adjust haptic level directly
+    chown system system /sys/devices/platform/soc/884000.i2c/i2c-3/3-005a/ulevel
+    chmod 0664 /sys/devices/platform/soc/884000.i2c/i2c-3/3-005a/ulevel
+
 on property:sys.boot_completed=1
     chown media audio /sys/kernel/wdsp0/boot
 

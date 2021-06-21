@@ -24,6 +24,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
@@ -61,6 +62,20 @@
         <service android:name=".doze.DozeService"
                  android:permission="XiaomiDozeService">
         </service>
+
+	<activity
+            android:name=".haptic.HapticLevelActivity"
+            android:label="@string/haptic_title"
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.ia.sound" />
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/haptic_summary" />
+        </activity>
 
         <activity
             android:name=".doze.DozeSettingsActivity"
