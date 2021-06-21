@@ -97,6 +97,10 @@ on post-fs-data
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
 
+    # Allow system to adjust haptic level directly
+    chown system system /sys/devices/platform/soc/884000.i2c/i2c-3/3-005a/ulevel
+    chmod 0664 /sys/devices/platform/soc/884000.i2c/i2c-3/3-005a/ulevel
+
 on boot
     start mi_thermald
     start rmt_storage
