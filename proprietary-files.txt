@@ -581,12 +581,6 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqcbor.so
 vendor/lib64/libqtikeymaster4.so
 
-# Listen
-vendor/lib/hw/sound_trigger.primary.sm6150.so
-vendor/lib/libadpcmdec.so
-vendor/lib/librice.so
-vendor/lib/libsmwrapper.so
-
 # Media
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/vppservice

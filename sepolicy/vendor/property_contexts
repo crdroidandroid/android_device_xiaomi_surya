@@ -1,6 +1,3 @@
-# Audio
-audio.soundtrigger.debug.          u:object_r:vendor_default_prop:s0
-
 # Camera
 vendor.camera.                     u:object_r:vendor_camera_prop:s0
 camera.sensor.rearMain.fuseID      u:object_r:vendor_camera_prop:s0
