@@ -21,6 +21,8 @@ import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.provider.Settings;
 
+import androidx.preference.PreferenceManager;
+
 import java.lang.Math;
 
 import org.lineageos.settings.utils.FileUtils;
@@ -49,7 +51,8 @@ public final class HapticUtils {
     }
 
     public static void restoreLevel(Context context) {
-        applyLevel(context, Settings.Secure.getInt(
-            context.getContentResolver(), PREF_LEVEL, 80), false);
+        int level = PreferenceManager.getDefaultSharedPreferences(context)
+                .getInt(PREF_LEVEL, 80);
+        applyLevel(context, level, false);
     }
 }
