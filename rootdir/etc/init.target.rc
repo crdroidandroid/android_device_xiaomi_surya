@@ -68,6 +68,9 @@ on init
     chown system system /proc/tp_gesture
     chmod 0644 /proc/tp_gesture
 
+    # Change permissions for /dev/diag
+    chmod 0666 /dev/diag
+
 on init && property:ro.boot.hwname=*
     setprop ro.boot.product.hardware.sku ${ro.boot.hwname}
 
