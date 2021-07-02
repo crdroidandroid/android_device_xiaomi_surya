@@ -25,44 +25,49 @@
         android:summary="@string/ambient_display_always_on_summary"
         android:persistent="false" />
 
-    <SwitchPreference
-        android:key="wake_on_gesture"
-        android:defaultValue="false"
-        android:icon="@drawable/ic_doze_wake"
-        android:title="@string/wake_on_gesture_title"
-        android:summary="@string/wake_on_gesture_summary" />
-
     <PreferenceCategory
-        android:key="pickup_sensor"
-        android:title="@string/pickup_sensor_title">
+        android:key="gestures"
+        android:title="@string/ambient_display_gestures_title">
 
         <SwitchPreference
-            android:key="gesture_pick_up"
+            android:key="wake_on_gesture"
             android:defaultValue="false"
-            android:icon="@drawable/ic_doze_pickup"
-            android:title="@string/pick_up_gesture_title"
-            android:summary="@string/pick_up_gesture_summary" />
+            android:icon="@drawable/ic_doze_wake"
+            android:title="@string/wake_on_gesture_title"
+            android:summary="@string/wake_on_gesture_summary" />
+
+        <PreferenceCategory
+            android:key="pickup_sensor"
+            android:title="@string/pickup_sensor_title">
+
+            <SwitchPreference
+                android:key="gesture_pick_up"
+                android:defaultValue="false"
+                android:icon="@drawable/ic_doze_pickup"
+                android:title="@string/pick_up_gesture_title"
+                android:summary="@string/pick_up_gesture_summary" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:key="proximity_sensor"
+            android:title="@string/proximity_sensor_title">
+
+            <SwitchPreference
+                android:key="gesture_hand_wave"
+                android:defaultValue="false"
+                android:icon="@drawable/ic_doze_hand"
+                android:title="@string/hand_wave_gesture_title"
+                android:summary="@string/hand_wave_gesture_summary" />
+
+            <SwitchPreference
+                android:key="gesture_pocket"
+                android:defaultValue="false"
+                android:icon="@drawable/ic_doze_pocket"
+                android:title="@string/pocket_gesture_title"
+                android:summary="@string/pocket_gesture_summary" />
+
+        </PreferenceCategory>
 
     </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="proximity_sensor"
-        android:title="@string/proximity_sensor_title">
-
-        <SwitchPreference
-            android:key="gesture_hand_wave"
-            android:defaultValue="false"
-            android:icon="@drawable/ic_doze_hand"
-            android:title="@string/hand_wave_gesture_title"
-            android:summary="@string/hand_wave_gesture_summary" />
-
-        <SwitchPreference
-            android:key="gesture_pocket"
-            android:defaultValue="false"
-            android:icon="@drawable/ic_doze_pocket"
-            android:title="@string/pocket_gesture_title"
-            android:summary="@string/pocket_gesture_summary" />
-
-    </PreferenceCategory>
-
 </PreferenceScreen>
