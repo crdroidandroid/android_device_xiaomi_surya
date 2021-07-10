@@ -28,7 +28,6 @@
 <devices>
     <device name="qti-haptics"/>
     <device name="qcom-hv-haptics"/>
-    <device name="aw8697_haptic"/>
-    <device name="drv260x:haptics"/>
+    <device name="drv2624:haptics"/>
     <device name="aw8624_haptic"/>
 </devices>
