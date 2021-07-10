@@ -1,4 +1,1 @@
 vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon u:object_r:hal_fingerprint_hwservice_xiaomi:s0
-vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint u:object_r:hal_fingerprint_hwservice_xiaomi:s0
-vendor.xiaomi.hardware.motor::IMotor u:object_r:hal_motor_hwservice_xiaomi:s0
-vendor.xiaomi.hardware.touchfeature::ITouchFeature u:object_r:hal_touchfeature_hwservice_xiaomi:s0

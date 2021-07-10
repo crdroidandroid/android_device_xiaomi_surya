@@ -1,3 +1,0 @@
-type sysfs_hbm, sysfs_type, fs_type;
-
-allow hal_lineage_livedisplay_qti sysfs_hbm:file rw_file_perms;
