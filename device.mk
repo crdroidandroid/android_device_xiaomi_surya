@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# Product launched with 9.0
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
