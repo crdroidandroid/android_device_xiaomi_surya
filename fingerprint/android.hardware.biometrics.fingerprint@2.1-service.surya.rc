@@ -1,3 +1,19 @@
+on init
+    chown system system /dev/goodix_fp
+    chmod 0644 /dev/goodix_fp
+
+on boot
+    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/fingerdown_wait
+    chmod 0220 /sys/bus/platform/devices/soc/soc:fpc1020/fingerdown_wait
+
+    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/irq
+    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/modalias
+    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/wakeup_enable
+
+on post-fs-data
+    mkdir /data/vendor/goodix 0777 system system
+    mkdir /data/vendor/fpc 0777 system system
+
 service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.surya
     # "class hal" causes a race condition on some devices due to files created
     # in /data. As a workaround, postpone startup until later in boot once
