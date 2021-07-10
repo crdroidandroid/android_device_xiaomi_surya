@@ -13,15 +13,16 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<!-- Xiaomi sm6150 specific wifi overlays -->
+<!-- Karna specific wifi overlays -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.wifi.resources.xiaomi_sm6150"
+    package="com.android.wifi.resources.karna"
     android:versionCode="1"
     android:versionName="1.0">
     <application android:hasCode="false" />
     <overlay
       android:targetPackage="com.android.wifi.resources"
-      android:targetName="WifiCustomization"
+      android:requiredSystemPropertyName="ro.boot.hwname"
+      android:requiredSystemPropertyValue="karna"
       android:isStatic="true"
       android:priority="0"/>
 </manifest>

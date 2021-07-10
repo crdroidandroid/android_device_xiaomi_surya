@@ -1,8 +1,8 @@
 cc_binary {
-    name: "android.hardware.biometrics.fingerprint@2.1-service.davinci",
+    name: "android.hardware.biometrics.fingerprint@2.1-service.surya",
     defaults: ["hidl_defaults"],
-    init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.davinci.rc"],
-    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.1-service.davinci.xml"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.surya.rc"],
+    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.1-service.surya.xml"],
     vendor: true,
     relative_install_path: "hw",
     srcs: [

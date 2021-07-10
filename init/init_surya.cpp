@@ -73,10 +73,10 @@ void set_ro_product_prop(const std::string &prop, const std::string &value) {
 };
 
 void vendor_load_properties() {
-    std::string region;
     std::string hardware_revision;
-    region = GetProperty("ro.boot.hwc", "GLOBAL");
-    hardware_revision = GetProperty("ro.boot.hwversion", "UNKNOWN");
+    std::string hwname;
+    hardware_revision = GetProperty("ro.boot.hwversion", "");
+    hwname = GetProperty("ro.boot.hwname", "");
 
     std::string model;
     std::string device;
@@ -84,24 +84,18 @@ void vendor_load_properties() {
     std::string description;
     std::string mod_device;
 
-    if (region == "GLOBAL") {
-        model = "Mi 9T";
-        device = "davinci";
-        fingerprint = "Xiaomi/davinci/davinci:10/QKQ1.190825.002/V12.0.3.0.QFJMIXM:user/release-keys";
-        description = "davinci-user 10 QKQ1.190825.002 V12.0.3.0.QFJMIXM release-keys";
-        mod_device = "davinci_global";
-    } else if (region == "CN") {
-        model = "Redmi K20";
-        device = "davinci";
-        fingerprint = "Xiaomi/davinci/davinci:10/QKQ1.190825.002/V12.0.3.0.QFJCNXM:user/release-keys";
-        description = "davinci-user 10 QKQ1.190825.002 V12.0.3.0.QFJCNXM release-keys";
-    } else if (region == "INDIA") {
-        model = "Redmi K20";
-        device = "davinciin";
-        fingerprint = "Xiaomi/davinciin/davinciin:10/QKQ1.190825.002/V12.0.3.0.QFJINXM:user/release-keys";
-        description = "davinciin-user 10 QKQ1.190825.002 V12.0.3.0.QFJINXM release-keys";
-        mod_device = "davinciin_in_global";
+    if (hwname == "surya") {
+        model = "M2007J20CG";
+        device = "surya";
+        mod_device = "surya_global";
+    } else if (hwname == "karna") {
+        model = "M2007J20CI";
+        device = "karna";
+        mod_device = "surya_in_global";
     }
+
+    fingerprint = "POCO/surya_global/surya:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys";
+    description = "surya_global-user 11 RKQ1.200826.002 V12.5.1.0.RJGMIXM release-keys";
 
     set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);

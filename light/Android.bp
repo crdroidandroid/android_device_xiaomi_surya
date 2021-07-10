@@ -14,10 +14,10 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.light@2.0-service.davinci",
+    name: "android.hardware.light@2.0-service.surya",
     defaults: ["hidl_defaults"],
-    vintf_fragments: ["android.hardware.light@2.0-service.davinci.xml"],
-    init_rc: ["android.hardware.light@2.0-service.davinci.rc"],
+    vintf_fragments: ["android.hardware.light@2.0-service.surya.xml"],
+    init_rc: ["android.hardware.light@2.0-service.surya.rc"],
     relative_install_path: "hw",
     srcs: [
         "service.cpp",
