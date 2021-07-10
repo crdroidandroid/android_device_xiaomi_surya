@@ -30,60 +30,33 @@
         <item>1</item>
         <item>2</item>
         <item>4</item>
-        <item>6</item>
-        <item>8</item>
+        <item>7</item>
         <item>10</item>
-        <item>15</item>
-        <item>20</item>
-        <item>25</item>
+        <item>14</item>
+        <item>17</item>
+        <item>21</item>
+        <item>26</item>
         <item>30</item>
-        <item>35</item>
-        <item>40</item>
-        <item>45</item>
-        <item>50</item>
-        <item>55</item>
+        <item>34</item>
+        <item>39</item>
         <item>60</item>
-        <item>65</item>
-        <item>70</item>
-        <item>75</item>
-        <item>80</item>
-        <item>85</item>
-        <item>90</item>
-        <item>95</item>
         <item>100</item>
-        <item>120</item>
         <item>140</item>
-        <item>160</item>
-        <item>180</item>
-        <item>200</item>
         <item>220</item>
-        <item>240</item>
-        <item>260</item>
         <item>280</item>
-        <item>300</item>
-        <item>320</item>
-        <item>340</item>
-        <item>360</item>
-        <item>380</item>
+        <item>310</item>
         <item>400</item>
-        <item>420</item>
-        <item>440</item>
-        <item>460</item>
-        <item>480</item>
         <item>500</item>
         <item>700</item>
         <item>900</item>
-        <item>1100</item>
+        <item>1000</item>
         <item>1300</item>
         <item>1500</item>
-        <item>1700</item>
         <item>1900</item>
         <item>2200</item>
         <item>2500</item>
+        <item>2800</item>
         <item>3000</item>
-        <item>3500</item>
-        <item>4000</item>
-        <item>4500</item>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -99,70 +72,61 @@
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
         <item>5</item>
-        <item>9</item>
-        <item>16</item>
-        <item>24</item>
-        <item>31</item>
-        <item>35</item>
-        <item>48</item>
-        <item>61</item>
-        <item>83</item>
-        <item>87</item>
-        <item>87</item>
-        <item>87</item>
-        <item>88</item>
-        <item>88</item>
-        <item>88</item>
-        <item>89</item>
-        <item>89</item>
-        <item>89</item>
-        <item>90</item>
-        <item>90</item>
-        <item>91</item>
-        <item>91</item>
-        <item>91</item>
-        <item>92</item>
-        <item>92</item>
-        <item>93</item>
+        <item>5</item>
+        <item>10</item>
+        <item>18</item>
+        <item>36</item>
+        <item>55</item>
+        <item>60</item>
+        <item>68</item>
+        <item>70</item>
         <item>95</item>
         <item>96</item>
+        <item>97</item>
         <item>98</item>
-        <item>98</item>
-        <item>100</item>
-        <item>101</item>
-        <item>102</item>
-        <item>104</item>
-        <item>105</item>
-        <item>107</item>
-        <item>108</item>
-        <item>110</item>
-        <item>111</item>
+        <item>103</item>
         <item>113</item>
-        <item>114</item>
-        <item>116</item>
-        <item>117</item>
-        <item>119</item>
-        <item>120</item>
-        <item>142</item>
-        <item>164</item>
-        <item>190</item>
-        <item>216</item>
-        <item>243</item>
-        <item>272</item>
-        <item>302</item>
-        <item>313</item>
-        <item>386</item>
+        <item>118</item>
+        <item>124</item>
+        <item>132</item>
+        <item>134</item>
+        <item>144</item>
+        <item>157</item>
+        <item>175</item>
+        <item>209</item>
+        <item>235</item>
+        <item>270</item>
+        <item>280</item>
+        <item>340</item>
+        <item>380</item>
         <item>430</item>
-        <item>434</item>
-        <item>445</item>
-        <item>445</item>
+        <item>467</item>
+        <item>500</item>
     </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
          This array should be equal in size to config_screenBrightnessBacklight. -->
     <integer-array name="config_screenBrightnessBacklight">
+        <item>0</item>
         <item>1</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>75</item>
+        <item>90</item>
+        <item>105</item>
+        <item>120</item>
+        <item>135</item>
+        <item>150</item>
+        <item>165</item>
+        <item>180</item>
+        <item>195</item>
+        <item>210</item>
+        <item>225</item>
+        <item>240</item>
         <item>255</item>
     </integer-array>
 
@@ -174,8 +138,26 @@
 
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
-        <item>2</item>    <!-- index 1 -->
-        <item>450</item>  <!-- index 2 -->
+        <item>0</item>
+        <item>4</item>
+        <item>22</item>
+        <item>30</item>
+        <item>68</item>
+        <item>95</item>
+        <item>133</item>
+        <item>165</item>
+        <item>192</item>
+        <item>218</item>
+        <item>255</item>
+        <item>290</item>
+        <item>326</item>
+        <item>352</item>
+        <item>384</item>
+        <item>399</item>
+        <item>422</item>
+        <item>432</item>
+        <item>442</item>
+        <item>455</item>
     </array>
 
     <!-- Screen brightness used to dim the screen when the user activity
@@ -198,7 +180,7 @@
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
     <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
 
     <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
