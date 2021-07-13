@@ -63,18 +63,30 @@ system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
 
+# Audio HAL
+vendor/lib/libadm.so
+vendor/lib/hw/audio.primary.sm6150.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioparsers.so
+vendor/lib/libqtigef.so
+
+# Audio extensions
+vendor/lib/btaudio_offload_if.so
+vendor/lib/liba2dpoffload.so
+vendor/lib/libhdmiedid.so
+vendor/lib/libhfp.so
+vendor/lib/libsndmonitor.so
+vendor/lib/libspkrprot.so
+
 # Audio firmware
 vendor/firmware/tfa98xx.cnt
 
 # Audio libraries
-vendor/lib/btaudio_offload_if.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
-vendor/lib/libadm.so
 vendor/lib/libaudcal.so
-vendor/lib/libqtigef.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
