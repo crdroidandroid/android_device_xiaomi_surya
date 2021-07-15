@@ -53,11 +53,12 @@ def OTA_InstallEnd(info):
   return
 
 def AddBasebandAssertion(info, input_zip):
-  android_info = input_zip.read("OTA/android-info.txt")
-  m = re.search(r'require\s+version-baseband\s*=\s*(.+)', android_info)
-  if m:
-    modem_version, firmware_version = m.group(1).rstrip().split(',')
-    if (len(modem_version) and len(firmware_version)):
-      cmd = 'assert(xiaomi.verify_baseband({0}) == "1" || abort("ERROR: This package requires firmware from MIUI {1} or newer. Please upgrade firmware and retry!"););'
-      info.script.AppendExtra(cmd.format(modem_version, firmware_version))
+  android_info = input_zip.open("OTA/android-info.txt")
+  for line in android_info.readlines():
+    m = re.search(r'require\s+version-baseband\s*=\s*(.+)', line.decode('utf-8'))
+    if m:
+      hwc, modem_version, firmware_version = m.group(1).rstrip().split(',')
+      if (len(hwc) and len(modem_version) and len(firmware_version)):
+        cmd = 'assert(getprop("ro.boot.hwc") == "{0}" && (xiaomi.verify_baseband("{1}") == "1" || abort("ERROR: This package requires firmware from MIUI {2} or newer. Please upgrade firmware and retry!");) || true);'
+        info.script.AppendExtra(cmd.format(hwc, modem_version, firmware_version))
   return

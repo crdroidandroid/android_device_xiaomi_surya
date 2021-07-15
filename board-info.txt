@@ -1,1 +1,1 @@
-require version-baseband=4.3.c5-00069,20.10.20
+require version-baseband=CN,4.3.c5-00069,20.10.20
