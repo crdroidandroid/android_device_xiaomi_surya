@@ -57,8 +57,7 @@ def AddBasebandAssertion(info, input_zip):
   m = re.search(r'require\s+version-baseband\s*=\s*(.+)', android_info)
   if m:
     modem_version, firmware_version = m.group(1).rstrip().split(',')
-    if ((len(modem_version) and '*' not in modem_version) and \
-        (len(firmware_version) and '*' not in firmware_version)):
+    if (len(modem_version) and len(firmware_version)):
       cmd = 'assert(xiaomi.verify_baseband({0}) == "1" || abort("ERROR: This package requires firmware from MIUI {1} or newer. Please upgrade firmware and retry!"););'
       info.script.AppendExtra(cmd.format(modem_version, firmware_version))
   return
