@@ -103,7 +103,10 @@ ro.soc.manufacturer=QTI
 ro.soc.model=SM7150
 
 # Crypto
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
 ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.volume.options=::v2
 
 # Dalvik
 dalvik.vm.systemuicompilerfilter=speed
