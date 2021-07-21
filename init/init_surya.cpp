@@ -100,8 +100,8 @@ void vendor_load_properties() {
         }
     }
 
-    fingerprint = "POCO/surya_global/surya:11/RKQ1.200826.002/V12.5.1.0.RJGMIXM:user/release-keys";
-    description = "surya_global-user 11 RKQ1.200826.002 V12.5.1.0.RJGMIXM release-keys";
+    fingerprint = "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys";
+    description = "redfin-user 11 RQ3A.210805.001.A1 7474174 release-keys";
 
     set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
