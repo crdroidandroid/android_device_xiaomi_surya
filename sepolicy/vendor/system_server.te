@@ -2,3 +2,6 @@ get_prop(system_server, vendor_fp_prop);
 
 # Allow read fastcharge node
 allow system_server vendor_sysfs_battery_supply:file r_file_perms;
+
+# Notch
+get_prop(system_server, vendor_display_notch_prop)
