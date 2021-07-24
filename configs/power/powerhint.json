@@ -162,15 +162,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "PMQoSCpuDmaLatency",
-      "Path": "/dev/cpu_dma_latency",
-      "Values": [
-        "44",
-        "100"
-      ],
-      "HoldFd": true
-    },
-    {
       "Name": "EnergyAware",
       "Path": "/proc/sys/kernel/sched_energy_aware",
       "Values": [
@@ -296,12 +287,6 @@
       "Node": "CPULittleClusterMinFreq",
       "Duration": 5000,
       "Value": "9999999"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 5000,
-      "Value": "44"
     },
     {
       "PowerHint": "LAUNCH",
