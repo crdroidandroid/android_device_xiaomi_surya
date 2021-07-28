@@ -1,1 +1,0 @@
-require version-baseband=GLOBAL,4.4.c6-00031,V12.5.1.0.RJGMIXM

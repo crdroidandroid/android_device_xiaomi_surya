@@ -1,7 +1,6 @@
-#
 # Copyright (C) 2009 The Android Open Source Project
 # Copyright (C) 2019 The Mokee Open Source Project
-# Copyright (C) 2020-2021 The LineageOS Open Source Project
+# Copyright (C) 2020 The LineageOS Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,18 +13,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
 import common
 import re
-
-def FullOTA_Assertions(info):
-  AddBasebandAssertion(info, info.input_zip)
-  return
-
-def IncrementalOTA_Assertions(info):
-  AddBasebandAssertion(info, info.input_zip)
-  return
 
 def FullOTA_InstallEnd(info):
   OTA_InstallEnd(info)
@@ -50,15 +40,4 @@ def OTA_InstallEnd(info):
   AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
   AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
   AddImage(info, "vbmeta_system.img", "/dev/block/bootdevice/by-name/vbmeta_system")
-  return
-
-def AddBasebandAssertion(info, input_zip):
-  android_info = input_zip.open("OTA/android-info.txt")
-  for line in android_info.readlines():
-    m = re.search(r'require\s+version-baseband\s*=\s*(.+)', line.decode('utf-8'))
-    if m:
-      hwc, modem_version, firmware_version = m.group(1).rstrip().split(',')
-      if (len(hwc) and len(modem_version) and len(firmware_version)):
-        cmd = 'assert(getprop("ro.boot.hwc") == "{0}" && (xiaomi.verify_baseband("{1}") == "1" || abort("ERROR: This package requires firmware from MIUI {2} or newer. Please upgrade firmware and retry!");) || true);'
-        info.script.AppendExtra(cmd.format(hwc, modem_version, firmware_version))
   return
