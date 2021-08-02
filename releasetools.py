@@ -39,14 +39,15 @@ def AddImageRadio(info, input_zip, basename, dest):
   data = input_zip.read("RADIO/" + basename)
 
   common.ZipWriteStr(info.output_zip, name, data)
-  info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
 
 def OTA_InstallEnd(info, input_zip):
+  info.script.Print("Patching device-tree and verity images...")
   AddImage(info, input_zip, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
   AddImage(info, input_zip, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
   AddImage(info, input_zip, "vbmeta_system.img", "/dev/block/bootdevice/by-name/vbmeta_system")
-
+  info.script.Print("Patching firmware images...")
+  
   # Firmware
   AddImageRadio(info, input_zip, "cmnlib64.mbn", "/dev/block/bootdevice/by-name/cmnlib64")
   AddImageRadio(info, input_zip, "NON-HLOS.bin", "/dev/block/bootdevice/by-name/modem")
