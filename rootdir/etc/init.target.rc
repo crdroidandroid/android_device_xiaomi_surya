@@ -75,6 +75,7 @@ on property:ro.boot.product.hardware.sku=surya
     enable vendor.nfc_hal_service
 
 on fs
+    start hwservicemanager
     mount_all --early
 
     restorecon_recursive /mnt/vendor/persist
