@@ -13,6 +13,9 @@ dalvik.vm.dex2oat64.enabled=true
 # FUSE
 persist.sys.fuse.passthrough.enable=true
 
+# IMS
+persist.vendor.qti.telephony.vt_cam_interface=2
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
