@@ -218,6 +218,9 @@
     <string name="config_mms_user_agent_profile_url" translatable="false"
             >http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
+    
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 

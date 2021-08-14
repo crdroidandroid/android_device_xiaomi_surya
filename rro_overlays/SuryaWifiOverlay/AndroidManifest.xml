@@ -15,12 +15,12 @@
 -->
 <!-- Surya specific wifi overlays -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.wifi.resources.surya"
+    package="com.android.wifi.resources.surya"
     android:versionCode="1"
     android:versionName="1.0">
     <application android:hasCode="false" />
     <overlay
-      android:targetPackage="com.google.android.wifi.resources"
+      android:targetPackage="com.android.wifi.resources"
       android:requiredSystemPropertyName="ro.boot.hwname"
       android:requiredSystemPropertyValue="surya"
       android:isStatic="true"

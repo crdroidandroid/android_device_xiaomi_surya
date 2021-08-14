@@ -26,7 +26,7 @@
 
     <!-- The CPU temperature divider, if needed -->
     <integer name="config_cpuTempDivider" translatable="false">1000</integer>
-    
-    <!-- Show the network traffic monitor on statusbar even if the device has a notch -->
-    <bool name="config_forceShowNetworkTrafficOnStatusBar">true</bool>
+
+    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <integer name="config_screenRecorderMaxFramerate">90</integer>
 </resources>
