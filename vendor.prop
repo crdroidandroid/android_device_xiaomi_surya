@@ -182,6 +182,7 @@ persist.vendor.ims.disableQXDMLogs=1
 
 # Keystore
 ro.hardware.keystore_desede=true
+ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Media
 debug.stagefright.ccodec=1
