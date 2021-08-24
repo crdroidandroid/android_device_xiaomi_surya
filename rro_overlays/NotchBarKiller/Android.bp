@@ -15,5 +15,5 @@
 runtime_resource_overlay {
     name: "NotchBarKiller",
     sdk_version: "current",
-    product_specific: true,
+    vendor: true,
 }
