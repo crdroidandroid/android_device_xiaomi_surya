@@ -26,3 +26,6 @@ binder_call(xiaomiparts_app, gpuservice)
 # Allow xiaomi_settings to read and write to sysfs_vibrator
 allow xiaomiparts_app sysfs_vibrator:dir search;
 allow xiaomiparts_app sysfs_vibrator:file rw_file_perms;
+
+# Theme prop for persist.sys.theme.accentcolor
+allow xiaomiparts_app theme_prop:file { read } ;
