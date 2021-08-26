@@ -1,4 +1,4 @@
-# surya package version: V12.5.1.0.RJGMIXM, unless stated otherwise
+# surya package version: V12.5.2.0.RJGEUXM, unless stated otherwise
 
 # Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
