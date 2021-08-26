@@ -717,6 +717,11 @@ vendor/lib/vendor.qti.hardware.vpp@1.3.so
 # NFC
 vendor/lib/libpn553_fw.so
 
+# NFC configs
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
+vendor/libnfc-nxp_RF.conf
+
 # Peripheral Manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
