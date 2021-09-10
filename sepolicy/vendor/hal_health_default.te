@@ -1,0 +1,4 @@
+allow hal_health_default sysfs:dir r_dir_perms;
+allow hal_health_default sysfs:file r_file_perms;
+allow hal_health_default sysfs_wakeup:dir r_dir_perms;
+allow hal_health_default sysfs_wakeup:file r_file_perms;
