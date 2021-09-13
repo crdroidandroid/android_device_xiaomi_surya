@@ -83,8 +83,6 @@ void vendor_load_properties() {
 
     std::string model;
     std::string device;
-    std::string fingerprint;
-    std::string description;
     std::string mod_device;
 
     if (region == "THAI" || region == "THAI_PA") {
@@ -100,13 +98,8 @@ void vendor_load_properties() {
         }
     }
 
-    fingerprint = "google/sunfish/sunfish:11/RQ3A.210905.001/7511028:user/release-keys";
-    description = "sunfish-user 11 RQ3A.210905.001 7511028 release-keys";
-
-    set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
-    property_override("ro.build.description", description.c_str());
 
     property_override("ro.boot.hardware.revision", hardware_revision.c_str());
 }
