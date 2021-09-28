@@ -315,6 +315,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
+PRODUCT_PACKAGES += \
+    KarnaSettingsProviderOverlay \
+    SuryaSettingsProviderOverlay
+
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
