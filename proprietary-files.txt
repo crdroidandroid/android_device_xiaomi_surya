@@ -657,9 +657,6 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
-# IRQ balance
--vendor/bin/msm_irqbalance
-
 # Keymaster
 -vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
 -vendor/lib64/libkeymasterdeviceutils.so
