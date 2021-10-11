@@ -17,7 +17,7 @@ on post-fs-data
     mkdir /data/vendor/fpc 0770 system system
     mkdir /data/vendor/fpdump 0770 system system
 
-service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.surya
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.surya
     # "class hal" causes a race condition on some devices due to files created
     # in /data. As a workaround, postpone startup until later in boot once
     # /data is mounted.
