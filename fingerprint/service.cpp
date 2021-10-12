@@ -16,11 +16,8 @@
 
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.surya"
 
-#include <android/log.h>
-#include <hidl/HidlSupport.h>
 #include <hidl/HidlTransportSupport.h>
-#include <android/hardware/biometrics/fingerprint/2.1/IBiometricsFingerprint.h>
-#include <android/hardware/biometrics/fingerprint/2.1/types.h>
+
 #include "BiometricsFingerprint.h"
 
 using android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint;

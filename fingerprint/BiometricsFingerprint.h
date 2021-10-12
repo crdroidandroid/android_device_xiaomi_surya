@@ -17,12 +17,8 @@
 #ifndef ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H
 #define ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H
 
-#include <log/log.h>
-#include <android/log.h>
-#include <hardware/hardware.h>
 #include <hardware/fingerprint.h>
-#include <hidl/MQDescriptor.h>
-#include <hidl/Status.h>
+
 #include <android/hardware/biometrics/fingerprint/2.1/IBiometricsFingerprint.h>
 
 namespace android {
