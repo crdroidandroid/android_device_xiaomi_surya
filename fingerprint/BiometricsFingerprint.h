@@ -28,27 +28,30 @@ namespace fingerprint {
 namespace V2_1 {
 namespace implementation {
 
+using ::android::sp;
+using ::android::hardware::hidl_string;
+using ::android::hardware::hidl_vec;
+using ::android::hardware::Return;
+using ::android::hardware::Void;
 using ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint;
 using ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprintClientCallback;
 using ::android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
-using ::android::hardware::Return;
-using ::android::hardware::Void;
-using ::android::hardware::hidl_vec;
-using ::android::hardware::hidl_string;
-using ::android::sp;
 
 struct BiometricsFingerprint : public IBiometricsFingerprint {
-public:
+  public:
     BiometricsFingerprint();
     ~BiometricsFingerprint();
 
     // Method to wrap legacy HAL with BiometricsFingerprint class
     static IBiometricsFingerprint* getInstance();
 
-    // Methods from ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint follow.
-    Return<uint64_t> setNotify(const sp<IBiometricsFingerprintClientCallback>& clientCallback) override;
+    // Methods from ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint
+    // follow.
+    Return<uint64_t> setNotify(
+            const sp<IBiometricsFingerprintClientCallback>& clientCallback) override;
     Return<uint64_t> preEnroll() override;
-    Return<RequestStatus> enroll(const hidl_array<uint8_t, 69>& hat, uint32_t gid, uint32_t timeoutSec) override;
+    Return<RequestStatus> enroll(const hidl_array<uint8_t, 69>& hat, uint32_t gid,
+                                 uint32_t timeoutSec) override;
     Return<RequestStatus> postEnroll() override;
     Return<uint64_t> getAuthenticatorId() override;
     Return<RequestStatus> cancel() override;
@@ -57,9 +60,10 @@ public:
     Return<RequestStatus> setActiveGroup(uint32_t gid, const hidl_string& storePath) override;
     Return<RequestStatus> authenticate(uint64_t operationId, uint32_t gid) override;
 
-private:
+  private:
     static fingerprint_device_t* openHal();
-    static void notify(const fingerprint_msg_t *msg); /* Static callback for legacy HAL implementation */
+    static void notify(
+            const fingerprint_msg_t* msg); /* Static callback for legacy HAL implementation */
     static Return<RequestStatus> ErrorFilter(int32_t error);
     static FingerprintError VendorErrorFilter(int32_t error, int32_t* vendorCode);
     static FingerprintAcquiredInfo VendorAcquiredFilter(int32_t error, int32_t* vendorCode);
@@ -67,7 +71,7 @@ private:
 
     std::mutex mClientCallbackMutex;
     sp<IBiometricsFingerprintClientCallback> mClientCallback;
-    fingerprint_device_t *mDevice;
+    fingerprint_device_t* mDevice;
 };
 
 }  // namespace implementation
