@@ -1,0 +1,11 @@
+# Sensors
+persist.sensor.                    u:object_r:persist_sensors_prop:s0
+
+# Fingerprint
+gf.debug.                          u:object_r:exported_default_prop:s0
+
+# Xiaomi specific build properties
+ro.boot.hwc                        u:object_r:exported_default_prop:s0
+ro.boot.hwversion                  u:object_r:exported_default_prop:s0
+ro.miui.                           u:object_r:exported_system_prop:s0
+ro.product.mod_device              u:object_r:build_prop:s0
