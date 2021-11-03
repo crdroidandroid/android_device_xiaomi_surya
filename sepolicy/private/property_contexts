@@ -1,8 +1,0 @@
-ro.boot.hwc                    u:object_r:exported_default_prop:s0
-ro.boot.hwversion              u:object_r:exported_default_prop:s0
-ro.build.flavor                u:object_r:exported_default_prop:s0
-ro.camera.req.fmq.size         u:object_r:exported_default_prop:s0
-ro.camera.res.fmq.size         u:object_r:exported_default_prop:s0
-ro.cust.test                   u:object_r:exported_default_prop:s0
-ro.miui.                       u:object_r:exported_system_prop:s0
-ro.product.mod_device          u:object_r:exported2_default_prop:s0

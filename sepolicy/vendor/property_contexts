@@ -20,6 +20,8 @@ ro.vendor.camera.                  u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.res.fmq.size      u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.req.fmq.size      u:object_r:vendor_camera_prop:s0
 persist.vendor.camera.arcsoftlog   u:object_r:vendor_camera_prop:s0
+ro.camera.req.fmq.size             u:object_r:vendor_camera_prop:s0
+ro.camera.res.fmq.size             u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
 gf.debug.                          u:object_r:vendor_fp_prop:s0
@@ -38,6 +40,14 @@ ro.build.software.version          u:object_r:vendor_default_prop:s0
 
 # Sensors
 persist.sensor.                    u:object_r:persist_sensors_prop:s0
+
+# Xiaomi specific build properties
+ro.boot.hwc                        u:object_r:build_prop:s0
+ro.boot.hwversion                  u:object_r:build_prop:s0
+ro.build.flavor                    u:object_r:build_prop:s0
+ro.cust.test                       u:object_r:build_prop:s0
+ro.miui.                           u:object_r:build_prop:s0
+ro.product.mod_device              u:object_r:build_prop:s0
 
 # Thermal
 sys.thermal.			   u:object_r:vendor_thermal_normal_prop:s0
