@@ -72,6 +72,10 @@ genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify 
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0065/power_supply/bq2597x-standalone/type    u:object_r:vendor_sysfs_battery_supply:s0
 
 genfscon proc /last_kmsg u:object_r:proc_last_kmsg:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,smp2p_sleepstate/wakeup                                                                                                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-adsp/wakeup                                                                                                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-modem/wakeup                                                                                                                            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-cdsp/wakeup                                                                                                                             u:object_r:sysfs_wakeup:s0
 
 # Power
 genfscon proc /sys/kernel/sched_energy_aware u:object_r:proc_sched_energy_aware:s0
