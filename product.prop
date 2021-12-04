@@ -1,3 +1,6 @@
 # LMKD
 ro.config.low_ram=false
 ro.lmk.log_stats=true
+
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
