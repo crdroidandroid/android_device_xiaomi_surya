@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!-- Copyright (c) 2016-2020, The Linux Foundation. All rights reserved
+<!-- Copyright (c) 2016-2021, The Linux Foundation. All rights reserved
      Not a Contribution.
 -->
 <!-- Copyright (C) 2015 The Android Open Source Project
@@ -213,7 +213,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                              channelMasks="AUDIO_CHANNEL_IN_5POINT1,AUDIO_CHANNEL_INDEX_MASK_6,AUDIO_CHANNEL_IN_7POINT1,AUDIO_CHANNEL_INDEX_MASK_8"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_FLOAT"
                              samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000"
-                             channelMasks="AUDIO_CHANNEL_IN_5POINT1,AUDIO_CHANNEL_INDEX_MASK_6,AUDIO_CHANNEL_IN_7POINT1,AUDIO_CHANNEL_INDEX_MASK_8"/>
+                             channelMasks="AUDIO_CHANNEL_IN_STEREO,AUDIO_CHANNEL_INDEX_MASK_2,AUDIO_CHANNEL_IN_5POINT1,AUDIO_CHANNEL_INDEX_MASK_6,AUDIO_CHANNEL_IN_7POINT1,AUDIO_CHANNEL_INDEX_MASK_8"/>
                 </mixPort>
                 <mixPort name="record_24" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_24_BIT_PACKED"
