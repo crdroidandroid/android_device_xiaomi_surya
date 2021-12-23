@@ -434,7 +434,7 @@ PRODUCT_PACKAGES += \
 
 # Uevent
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
+    $(LOCAL_PATH)/rootdir/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
 
 # USB
 PRODUCT_PACKAGES += \
