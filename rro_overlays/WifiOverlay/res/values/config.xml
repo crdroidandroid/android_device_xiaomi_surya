@@ -79,4 +79,7 @@
          scan and wake the host when a configured SSID is detected by the dongle. This chipset
          capability can provide power savings when wifi needs to be always kept on. -->
     <bool name="config_wifi_background_scan_support">true</bool>
+
+    <!-- Indicate the driver support NL80211_REG_CHANGED event. -->
+    <bool translatable="false" name="config_wifiDriverSupportedNl80211RegChangedEvent">true</bool>
 </resources>
