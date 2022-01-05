@@ -57,4 +57,7 @@
 
     <!-- Indicates that wifi link probing is supported on this device -->
     <bool name="config_wifi_link_probing_supported">true</bool>
+
+    <!-- Indicate the driver support NL80211_REG_CHANGED event. -->
+    <bool name="config_wifiDriverSupportedNl80211RegChangedEvent" translatable="false">true</bool>
 </resources>
