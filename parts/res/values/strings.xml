@@ -77,4 +77,14 @@
 
     <!-- Ambient settings -->
     <string name="ambient_enable">Use ambient display</string>
+
+    <!-- Refresh Rate -->
+    <string name="refresh_title">Refresh Rate per-app</string>
+    <string name="refresh_summary">Set the maximum refresh rate for a specific application</string>
+    <string name="refresh_default">Default</string>
+    <string name="refresh_low">Low (30Hz)</string>
+    <string name="refresh_moderate">Moderate (50Hz)</string>
+    <string name="refresh_standard">Standard (60Hz)</string>
+    <string name="refresh_high">High (90Hz)</string>
+    <string name="refresh_extreme">Extreme (120Hz)</string>
 </resources>
