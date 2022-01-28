@@ -32,4 +32,7 @@
     <!-- Radius of the software rounded corners at the bottom of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
     <dimen name="rounded_corner_radius_bottom">89px</dimen>
+
+    <!-- the padding on the rouded corner content -->
+    <dimen name="rounded_corner_content_padding">6dp</dimen>
 </resources>
