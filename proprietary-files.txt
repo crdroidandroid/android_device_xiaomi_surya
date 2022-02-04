@@ -124,7 +124,7 @@ vendor/lib64/libaudio_log_utils.so
 
 # Audio FX modules
 system_ext/etc/permissions/audiosphere.xml
-system_ext/framework/audiosphere.jar
+-system_ext/framework/audiosphere.jar
 
 # Audio libraries
 vendor/lib/btaudio_offload_if.so
@@ -473,14 +473,14 @@ vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
 
 # DPM
-framework/tcmclient.jar
+-framework/tcmclient.jar
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
 system_ext/etc/permissions/com.qti.dpmframework.xml
 system_ext/etc/permissions/dpmapi.xml
-system_ext/framework/com.qti.dpmframework.jar
-system_ext/framework/dpmapi.jar
+-system_ext/framework/com.qti.dpmframework.jar
+-system_ext/framework/dpmapi.jar
 system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
 system_ext/lib64/libdpmctmgr.so
 system_ext/lib64/libdpmfdmgr.so
@@ -527,7 +527,7 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Fingerprint
 vendor/etc/permissions/com.fingerprints.extension.xml
-vendor/framework/com.fingerprints.extension.jar
+-vendor/framework/com.fingerprints.extension.jar
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/hw/fingerprint.goodix.default.so
@@ -791,8 +791,8 @@ vendor/lib/libqmi.so
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephonyservice.xml
-system_ext/framework/qcrilhook.jar
-system_ext/framework/qti-telephony-common.jar
+-system_ext/framework/qcrilhook.jar
+-system_ext/framework/qti-telephony-common.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/adpl
 vendor/bin/hw/qcrild
