@@ -622,17 +622,24 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
+# IMS - sweet-qssi-user-12-SKQ1.210908.001
+system_ext/lib64/lib-imsvideocodec.so|b7001bb1008106ccb9ef92dd2560e2052b40c325
+system_ext/lib64/lib-imsvt.so|e794300d62e04e17e43c32916c7265ee32645f91
+system_ext/lib64/lib-imsvtextutils.so|16bed08e80919635fcb7ace934bd5f16f059c182
+system_ext/lib64/lib-imsvtutils.so|875748249b9269e964f467311c72e123878c0de9
+system_ext/lib64/libdiag_system.so|51b930474a2b42d42e68b9f5d83eef1c1ea5df56
+system_ext/lib64/libimscamera_jni.so|ff3d65093f5bf19fba95798b0a121ee510b0f72e
+system_ext/lib64/libimsmedia_jni.so|3c625b6216237f1df44e0c75fcc6894f1a296847
+system_ext/lib64/vendor.qti.ims.callcapability@1.0.so|711d6ceca11af251e48b0705cefe5ce14d5f4142
+system_ext/lib64/vendor.qti.ims.callinfo@1.0.so|a15e4367597909e74fb4c3a67025720bbb1793a1
+system_ext/lib64/vendor.qti.ims.factory@1.0.so|7d468f0636ce9671d23492b06d0ab16363f52ae1
+system_ext/lib64/vendor.qti.ims.factory@1.1.so|a3f670e0dce45a8371300f2919c806a2dc5e2b80
+system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so|da8c5e108fdb9a546d37a78147872207e9ead8be
+system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|0c11ff5a7a671073ee40e17d46aa8b7acbf1dc0a
+-system_ext/priv-app/ims/ims.apk|664d341b2cbd4c52c5113b0e7a9af1582e75e997
+
 # IMS
-system_ext/lib64/libdiag_system.so
-system_ext/lib64/libimscamera_jni.so
-system_ext/lib64/libimsmedia_jni.so
-system_ext/lib64/lib-imsvideocodec.so
-system_ext/lib64/lib-imsvt.so
-system_ext/lib64/lib-imsvtextutils.so
-system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
-system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
--system_ext/priv-app/ims/ims.apk
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
@@ -786,12 +793,14 @@ vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 vendor/lib/libqmi.so
 
+# Telephony (qti-telephony-common)
+-system_ext/framework/qti-telephony-common.jar|e2fc79e0c07cad7a3564a3151d46d6f379637358
+
 # RIL
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephonyservice.xml
 -system_ext/framework/qcrilhook.jar
--system_ext/framework/qti-telephony-common.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/adpl
 vendor/bin/hw/qcrild
