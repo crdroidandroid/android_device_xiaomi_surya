@@ -80,7 +80,7 @@ public final class ThermalUtils {
     }
 
     protected static boolean isServiceEnabled(Context context) {
-        return Boolean.valueOf(PreferenceManager.getDefaultSharedPreferences(context).getString(THERMAL_SERVICE, "false"));
+        return true;
     }
 
     private void writeValue(String profiles) {

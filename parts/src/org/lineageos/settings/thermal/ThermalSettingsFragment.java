@@ -16,7 +16,6 @@
 package org.lineageos.settings.thermal;
 
 import android.annotation.Nullable;
-import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
@@ -31,12 +30,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SectionIndexer;
 import android.widget.Spinner;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.preference.PreferenceFragment;
@@ -52,8 +49,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ThermalSettingsFragment extends PreferenceFragment
-        implements AdapterView.OnItemClickListener, ApplicationsState.Callbacks,
-        CompoundButton.OnCheckedChangeListener {
+        implements AdapterView.OnItemClickListener, ApplicationsState.Callbacks {
 
     private AllPackagesAdapter mAllPackagesAdapter;
     private ApplicationsState mApplicationsState;
@@ -65,9 +61,6 @@ public class ThermalSettingsFragment extends PreferenceFragment
     private ListView mUserListView;
 
     private ThermalUtils mThermalUtils;
-
-    private TextView mTextView;
-    private View mSwitchBar;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -85,15 +78,12 @@ public class ThermalSettingsFragment extends PreferenceFragment
         mAllPackagesAdapter = new AllPackagesAdapter(getActivity());
 
         mThermalUtils = new ThermalUtils(getActivity());
-
-        final ActionBar actionBar = getActivity().getActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.thermal, container, false);
+        return inflater.inflate(R.layout.thermal_layout, container, false);
     }
 
     @Override
@@ -113,22 +103,7 @@ public class ThermalSettingsFragment extends PreferenceFragment
             mUserListView.setAdapter(mAllPackagesAdapter);
             mUserListView.setOnItemClickListener(this);
         }
-
-        mTextView = view.findViewById(R.id.switch_text);
-        mTextView.setText(getString(serviceEnabled ?
-                R.string.switch_bar_on : R.string.switch_bar_off));
-
-        mSwitchBar = view.findViewById(R.id.switch_bar);
-        Switch switchWidget = mSwitchBar.findViewById(android.R.id.switch_widget);
-        switchWidget.setChecked(serviceEnabled);
-        switchWidget.setOnCheckedChangeListener(this);
-        mSwitchBar.setActivated(serviceEnabled);
-        mSwitchBar.setOnClickListener(v -> {
-            switchWidget.setChecked(!switchWidget.isChecked());
-            mSwitchBar.setActivated(switchWidget.isChecked());
-        });
     }
-
 
     @Override
     public void onResume() {
@@ -506,22 +481,6 @@ public class ThermalSettingsFragment extends PreferenceFragment
                 }
             }
             return show;
-        }
-    }
-
-    @Override
-    public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-        mTextView.setText(getString(isChecked ? R.string.switch_bar_on : R.string.switch_bar_off));
-        mSwitchBar.setActivated(isChecked);
-
-        if (isChecked) {
-            ThermalUtils.startService(getActivity());
-            mUserListView.setAdapter(mAllPackagesAdapter);
-            mUserListView.setOnItemClickListener(this);
-        } else {
-            ThermalUtils.stopService(getActivity());
-            mUserListView.setAdapter(null);
-            mUserListView.setOnItemClickListener(null);
         }
     }
 
