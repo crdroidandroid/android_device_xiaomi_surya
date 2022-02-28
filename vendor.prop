@@ -215,7 +215,6 @@ persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.manual_nw_rej_ct=1
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
-persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.report_codec=1
 ro.telephony.default_network=22,22
 
