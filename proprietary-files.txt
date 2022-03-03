@@ -15,6 +15,10 @@ vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsprpc.so
 vendor/lib/libcdsp_default_listener.so
 
+# Camera provider
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
