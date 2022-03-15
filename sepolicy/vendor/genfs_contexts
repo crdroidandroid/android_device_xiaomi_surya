@@ -47,9 +47,6 @@ genfscon sysfs /devices/virtual/input/input1/wakeup5/wakeup_count u:object_r:sys
 genfscon sysfs /devices/virtual/input/input1/wakeup5/max_time_ms u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/input/input1/wakeup5/event_count u:object_r:sysfs_wakeup:s0
 
-genfscon sysfs /devices/platform/soc/8804000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat u:object_r:sysfs_disk_stat:s0
-genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/stat u:object_r:sysfs_disk_stat:s0
-
 # ds28e16 battery verify
 genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify u:object_r:vendor_sysfs_battery_supply:s0
 
