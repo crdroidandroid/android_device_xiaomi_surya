@@ -70,3 +70,6 @@ genfscon proc /last_kmsg u:object_r:proc_last_kmsg:s0
 
 # Power
 genfscon proc /sys/kernel/sched_energy_aware u:object_r:proc_sched_energy_aware:s0
+
+# USB
+genfscon sysfs /devices/platform/soc/a600000.ssusb/usb_data_enabled                  u:object_r:sysfs_usb_data_enabled:s0
