@@ -88,14 +88,14 @@ void vendor_load_properties() {
         model = "M2007J20CG";
         mod_device = "surya_global";
 	name = "surya_global";
-	fingerprint = "POCO/surya_eea/surya:11/RKQ1.200826.002/V12.5.5.0.RJGMIXM:user/release-keys";
+	fingerprint = "google/raven/raven:12/SP2A.220305.013.A3/8229987:user/release-keys";
 	description = "surya_eea-user 11 RKQ1.200826.002 V12.5.5.0.RJGMIXM release-keys";
     } else if (hwname == "karna") {
 	device = "karna";
         model = "M2007J20CI";
         mod_device = "surya_in_global";
 	name = "karna_in";
-	fingerprint = "POCO/surya_in/karna:11/RKQ1.200826.002/V12.5.5.0.RJGMIXM:user/release-keys";
+	fingerprint = "google/raven/raven:12/SP2A.220305.013.A3/8229987:user/release-keys";
 	description = "surya_in-user 11 RKQ1.200826.002 V12.5.5.0.RJGMIXM release-keys";
    }
 
