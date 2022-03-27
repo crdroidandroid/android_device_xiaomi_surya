@@ -3,7 +3,7 @@ hal_client_domain(hal_camera_default, hal_power)
 allow hal_camera_default proc_meminfo:file r_file_perms;
 
 r_dir_file(hal_camera_default, vendor_sysfs_kgsl)
-r_dir_file(hal_camera_default, camera_persist_file)
+r_dir_file(hal_camera_default, vendor_persist_camera_file)
 r_dir_file(hal_camera_default, mnt_vendor_file)
 r_dir_file(hal_camera_default, vendor_persist_sensors_file)
 

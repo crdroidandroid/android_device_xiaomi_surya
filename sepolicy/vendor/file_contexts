@@ -5,7 +5,7 @@
 /vendor/bin/batterysecret                                            u:object_r:batterysecret_exec:s0
 
 # Camera
-/mnt/vendor/persist/camera(/.*)?                                     u:object_r:camera_persist_file:s0
+/mnt/vendor/persist/camera(/.*)?                                     u:object_r:vendor_persist_camera_file:s0
 
 # Display
 /sys/devices/platform/soc/[a-f0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info u:object_r:vendor_sysfs_graphics:s0
