@@ -88,15 +88,15 @@ void vendor_load_properties() {
         model = "M2007J20CG";
         mod_device = "surya_global";
 	name = "surya_global";
-	fingerprint = "POCO/surya_eea/surya:11/RKQ1.200826.002/V12.5.5.0.RJGMIXM:user/release-keys";
-	description = "surya_eea-user 11 RKQ1.200826.002 V12.5.5.0.RJGMIXM release-keys";
+	fingerprint = "POCO/surya_eea/surya:11/RKQ1.200826.002/V12.5.7.0.RJGMIXM:user/release-keys";
+	description = "surya_eea-user 11 RKQ1.200826.002 V12.5.7.0.RJGMIXM release-keys";
     } else if (hwname == "karna") {
 	device = "karna";
         model = "M2007J20CI";
         mod_device = "surya_in_global";
 	name = "karna_in";
-	fingerprint = "POCO/surya_in/karna:11/RKQ1.200826.002/V12.5.5.0.RJGMIXM:user/release-keys";
-	description = "surya_in-user 11 RKQ1.200826.002 V12.5.5.0.RJGMIXM release-keys";
+	fingerprint = "POCO/surya_in/karna:11/RKQ1.200826.002/V12.5.7.0.RJGMIXM:user/release-keys";
+	description = "surya_in-user 11 RKQ1.200826.002 V12.5.7.0.RJGMIXM release-keys";
    }
 
     set_ro_build_prop("fingerprint", fingerprint);
