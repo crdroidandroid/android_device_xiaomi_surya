@@ -194,8 +194,6 @@ vendor/lib64/libFaceGrade.so
 vendor/lib64/libft2vendor.so
 vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libhvx_interface.so
-vendor/lib64/libmegface.so
-vendor/lib64/libMegviiFacepp-0.5.2.so
 vendor/lib64/libmiai_portraitsupernight.so
 vendor/lib64/libmiai_supernight.so
 vendor/lib64/libmialgo_basic.so
@@ -332,7 +330,6 @@ vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin
 vendor/etc/camera/libsnpe_dsp_v66_domains_v2_skel.so
 vendor/etc/camera/male_bg.png
 vendor/etc/camera/male_icon.png
-vendor/etc/camera/megviifacepp_0_5_2_model
 vendor/etc/camera/Miui-Light.ttf
 vendor/etc/camera/MIUI_Time.ttf
 vendor/etc/camera/model_back.dlc
