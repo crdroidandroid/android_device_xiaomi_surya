@@ -42,7 +42,6 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sm6150-udfps \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 # Fstab
