@@ -116,8 +116,6 @@ ro.crypto.volume.options=::v2
 dalvik.vm.systemuicompilerfilter=speed
 
 # Data modules
-persist.vendor.data.iwlan.enable=true
-persist.vendor.data.mode=concurrent
 ro.telephony.iwlan_operation_mode=legacy
 
 # DPM
@@ -203,11 +201,9 @@ ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.va_aosp.support=1
 
 # Radio
-persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_ltd_sys_ind=1
 persist.vendor.radio.dynamic_sar=1
-persist.vendor.radio.enableadvancedscan=true
 persist.vendor.radio.force_ltd_sys_ind=1
 persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.manual_nw_rej_ct=1
@@ -215,7 +211,6 @@ persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.report_codec=1
-persist.vendor.radio.sib16_support=1
 
 # WiFi
 wifi.aware.interface=wifi-aware0
