@@ -151,7 +151,7 @@
     <ctl name="TAS256X ASI Right Switch" value="0" />
     <ctl name="TAS256X ASI Left Switch" value="0" />
     <ctl name="TAS256X RX MODE LEFT" value="Speaker" />
-    <ctl name="TAS256X PLAYBACK VOLUME LEFT" value="55" />
+    <ctl name="TAS256X PLAYBACK VOLUME LEFT" value="56" />
     <ctl name="TAS256X PLAYBACK VOLUME RIGHT" value="55" />
     <ctl name="TAS256x Profile id" value="0" />
     <!-- 24bit support end -->
@@ -2610,14 +2610,14 @@
 <!--add for factory spk test-->
     <path name="speaker-left">
         <ctl name="TERT_MI2S_RX Channels" value="One" />
-	<ctl name="TAS256X PLAYBACK VOLUME LEFT" value="52" />
+	<ctl name="TAS256X PLAYBACK VOLUME LEFT" value="56" />
         <ctl name="TAS256X RX MODE RIGHT" value="Speaker" />
 	<ctl name="TAS256X ASI1 SEL RIGHT" value="Left" />
 	<ctl name="TAS256X ASI Left Switch" value="1" />
     </path>
     <path name="speaker-right">
         <ctl name="TERT_MI2S_RX Channels" value="One" />
-	<ctl name="TAS256X PLAYBACK VOLUME RIGHT" value="52" />
+	<ctl name="TAS256X PLAYBACK VOLUME RIGHT" value="54" />
         <ctl name="TAS256X RX MODE RIGHT" value="Speaker" />
         <ctl name="TAS256X ASI1 SEL RIGHT" value="Right" />
 	<ctl name="TAS256X ASI Right Switch" value="1" />
