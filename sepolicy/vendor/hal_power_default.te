@@ -23,3 +23,5 @@ allow hal_power_default vendor_sysfs_graphics:file r_file_perms;
 
 # To get/set powerhal state property
 set_prop(hal_power_default, vendor_power_prop)
+
+dontaudit hal_power_default self:capability dac_override;
