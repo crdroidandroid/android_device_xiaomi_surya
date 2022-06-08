@@ -90,9 +90,19 @@ on boot
     # Create fingerprint related directory
     mkdir /mnt/vendor/persist/goodix 0770 system system
 
+# access permissions for vibrator calibration
+    chmod 0666 sys/devices/platform/soc/884000.i2c/i2c-3/3-005a/cali
+    chmod 0666 sys/devices/platform/soc/884000.i2c/i2c-3/3-005a/cali_save
+    chmod 0666 sys/devices/platform/soc/884000.i2c/i2c-3/3-005a/f0_save
+    chmod 0666 sys/devices/platform/soc/884000.i2c/i2c-3/3-005a/osc_save
+    chmod 0666 sys/devices/platform/soc/884000.i2c/i2c-3/3-005a/osc_cali
+
 on property:sys.boot_completed=1
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.qcom
+
+on property:sys.boot_completed=1
+    start vibrator_calibration
 
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
@@ -119,6 +129,13 @@ on property:init.svc.vendor.per_mgr=running
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
+
+service vibrator_calibration /vendor/bin/vibrator_calibration
+     class late_start
+     user system
+     group system
+     disabled
+     oneshot
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     override

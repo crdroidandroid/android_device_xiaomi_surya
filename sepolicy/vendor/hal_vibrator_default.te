@@ -1,0 +1,2 @@
+allow hal_vibrator_default hal_vibrator_default:qipcrtr_socket { create };
+allow hal_vibrator_default mnt_vendor_file:file { read write open };

@@ -42,3 +42,8 @@
 # Xiaomi thermal daemon
 /vendor/bin/mi_thermald                                              u:object_r:mi_thermald_exec:s0
 /data/vendor/thermal(/.*)?                                           u:object_r:thermal_data_file:s0
+
+# Vibrator calibration
+/(vendor|system/vendor)/bin/vibrator_calibration    u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/lib(64)?/libqmi_cci\.so     u:object_r:same_process_hal_file:s0
+/sys/devices/platform/soc/884000.i2c/i2c-3/3-005a(/.*)?  u:object_r:sysfs_vibrator:s0
