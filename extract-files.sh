@@ -55,10 +55,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib64/hw/camera.qcom.so)
-            "${PATCHELF}" --remove-needed "libMegviiFacepp-0.5.2.so" "${2}"
-            "${PATCHELF}" --remove-needed "libmegface.so" "${2}"
-            "${PATCHELF}" --add-needed "libshim_megvii.so" "${2}"
+        vendor/lib64/hw/camera.qcom.so | vendor/lib64/libmegface.so | vendor/lib64/libFaceDetectpp-0.5.2.so)
+            sed -i "s|libmegface.so|libfacedet.so|g" "${2}"
+            sed -i "s|libMegviiFacepp-0.5.2.so|libFaceDetectpp-0.5.2.so|g" "${2}"
+            sed -i "s|megviifacepp_0_5_2_model|facedetectpp_0_5_2_model|g" "${2}"
             ;;
     esac
 }
