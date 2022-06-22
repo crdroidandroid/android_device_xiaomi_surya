@@ -23,7 +23,6 @@ BOARD_USES_ALSA_AUDIO := true
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 ODM_MANIFEST_SKUS += davinci
 ODM_MANIFEST_DAVINCI_FILES := \
-    $(COMMON_PATH)/configs/hidl/manifest-qva.xml \
     $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
 # Init
