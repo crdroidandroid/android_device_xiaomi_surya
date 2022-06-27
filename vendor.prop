@@ -196,6 +196,9 @@ debug.stagefright.omx_default_rank=0
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf.scroll_opt=true
 
+# Netflix
+vendor.netflix.bsp_rev=Q6150-17263-1
+
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 

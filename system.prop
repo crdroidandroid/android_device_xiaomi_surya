@@ -23,9 +23,6 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
 
-# Netflix custom property
-ro.netflix.bsp_rev=Q6150-17263-1
-
 # RCS
 persist.rcs.supported=1
 
