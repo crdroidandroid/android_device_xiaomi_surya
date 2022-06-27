@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Xiaomi Mi 9T (codenamed `davinci`) MIUI V12.1.4.0.RFJMIXM, unless pinned
+# These proprietary files are extracted from Xiaomi Mi 9T (codenamed `davinci`) MIUI V12.5.2.0.RFJCNXM, unless pinned
 
 # Audio ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
