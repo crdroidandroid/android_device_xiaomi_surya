@@ -1,3 +1,5 @@
+# These proprietary files are extracted from Xiaomi Mi 9T (codenamed `davinci`) MIUI V12.1.4.0.RFJMIXM, unless pinned
+
 # Audio ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb
@@ -185,7 +187,6 @@ vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/libvidhance.so
 
 # Camera Xiaomi
-#vendor/lib64/libSNPE.so
 vendor/etc/camera/lf_facerank_model.bin
 vendor/etc/camera/mibokeh_712_opencl.bin
 vendor/etc/camera/mibokeh_712_parameter.bin
