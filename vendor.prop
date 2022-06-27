@@ -3,10 +3,6 @@ ro.vendor.audio.sdk.fluencetype=fluence
 vendor.audio.feature.compr_voip.enable=false
 vendor.voice.path.for.pcm.voip=false
 
-# Chipset
-ro.soc.manufacturer=Qualcomm
-ro.soc.model=SDM7150
-
 # HVDCP
 persist.vendor.cp.taper_term_mv=6500
 persist.vendor.qg_cld_coff_gain=1.5
