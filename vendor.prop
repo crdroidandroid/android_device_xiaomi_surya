@@ -113,6 +113,7 @@ vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 camera.disable_zsl_mode=1
+persist.vendor.camera.logInfoMask=false
 
 # Chipset
 ro.soc.manufacturer=QTI
