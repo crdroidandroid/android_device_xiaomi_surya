@@ -14,10 +14,10 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.1-service.davinci",
+    name: "vendor.lineage.livedisplay@2.1-service.surya",
     defaults: ["hidl_defaults"],
-    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.davinci.xml"],
-    init_rc: ["vendor.lineage.livedisplay@2.1-service.davinci.rc"],
+    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.surya.xml"],
+    init_rc: ["vendor.lineage.livedisplay@2.1-service.surya.rc"],
     relative_install_path: "hw",
     srcs: [
         ":vendor.lineage.livedisplay@2.0-sdm-pa",
