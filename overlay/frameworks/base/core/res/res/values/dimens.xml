@@ -18,26 +18,18 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">103px</dimen>
-
-    <!-- Default adjustment for the software rounded corners since corners are not perfectly
-        round. This value is used when retrieving the "radius" of the rounded corner in cases
-        where the exact bezier curve cannot be retrieved.  This value will be subtracted from
-        rounded_corner_radius to more accurately provide a "radius" for the rounded corner. -->
-    <dimen name="rounded_corner_radius_adjustment">19px</dimen>
-
     <!-- Height of the status bar.
          Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
          -->
-    <dimen name="status_bar_height_default">84px</dimen>
-    <dimen name="status_bar_height_portrait">@dimen/status_bar_height_default</dimen>
+    <dimen name="status_bar_height_default">28dp</dimen>
+    <dimen name="status_bar_height_portrait">98px</dimen>
+    <dimen name="status_bar_height_landscape">28dp</dimen>
 
     <!-- Radius of the software rounded corners at the top of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_top">84px</dimen>
+    <dimen name="rounded_corner_radius_top">106px</dimen>
 
     <!-- Radius of the software rounded corners at the bottom of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_bottom">84px</dimen>
+    <dimen name="rounded_corner_radius_bottom">106px</dimen>
 </resources>
