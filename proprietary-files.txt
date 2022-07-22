@@ -305,13 +305,13 @@ vendor/etc/camera/score_icon.png
 vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/watermark_font_2300_3199.dat
 
-# Camera face detection
-vendor/etc/camera/megviifacepp_0_5_2_model:vendor/etc/camera/facedetectpp_0_5_2_model
--vendor/lib64/libMegviiFacepp-0.5.2.so:vendor/lib64/libFaceDetectpp-0.5.2.so
--vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so
-
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
+
+# Camera Megvii
+vendor/etc/camera/megviifacepp_0_5_2_model
+-vendor/lib64/libMegviiFacepp-0.5.2.so
+-vendor/lib64/libmegface.so
 
 # Camera sensors
 -vendor/lib64/camera/com.qti.sensor.ofilm_hi259.so
