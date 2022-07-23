@@ -25,8 +25,11 @@
     <dimen name="rounded_corner_content_padding">6dp</dimen>
 
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">12dp</dimen>
+    <dimen name="status_bar_padding_start">15dp</dimen>
 
     <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">12dp</dimen>
+    <dimen name="status_bar_padding_end">5dp</dimen>
+
+    <!-- Margin on the left side of the carrier text on Keyguard -->
+    <dimen name="keyguard_carrier_text_margin">22dp</dimen>
 </resources>
