@@ -78,21 +78,27 @@ void vendor_load_properties() {
     std::string region;
     std::string hardware_revision;
     std::string hwname;
+    std::string build_type;
     region = GetProperty("ro.boot.hwc", "GLOBAL");
     hardware_revision = GetProperty("ro.boot.hwversion", "UNKNOWN");
     hwname = GetProperty("ro.boot.hwname", "surya");
+    build_type = GetProperty("ro.build.type", "userdebug");
 
     std::string model;
+    std::string name;
     std::string device;
     std::string fingerprint;
+    std::string flavor;
     std::string description;
 
     if (hwname == "karna") {
         model = "M2007J20CI";
+        name = "karna_in";
         device = "karna";
         fingerprint = "POCO/karna_in/karna:12/RKQ1.211019.001/V13.0.1.0.SJGINXM:user/release-keys";
         description = "karna_in-user 12 RKQ1.211019.001 V13.0.1.0.SJGINXM release-keys";
     } else {
+        name = "surya_global";
         device = "surya";
         fingerprint = "POCO/surya_global/surya:12/RKQ1.211019.001/V13.0.1.0.SJGMIXM:user/release-keys";
         description = "surya_global-user 12 RKQ1.211019.001 V13.0.1.0.SJGMIXM release-keys";
@@ -103,9 +109,14 @@ void vendor_load_properties() {
             model = "M2007J20CG";
     }
 
+    flavor = device + "-" + build_type;
+
     set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
+    set_ro_product_prop("name", name);
     property_override("ro.build.description", description.c_str());
+    property_override("ro.build.flavor", flavor.c_str());
+    property_override("ro.build.product", device.c_str());
     property_override("ro.boot.hardware.revision", hardware_revision.c_str());
 }
