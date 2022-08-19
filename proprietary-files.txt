@@ -325,6 +325,3 @@ vendor/etc/thermald-devices.conf
 # Touchscreen firmware
 vendor/firmware/goodix_gt9886_limit_f10_first.tporder
 vendor/firmware/goodix_gt9886_limit_f10_second.tporder
-
-# WLAN
--vendor/bin/cnss-daemon
