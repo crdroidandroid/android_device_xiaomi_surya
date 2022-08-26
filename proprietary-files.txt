@@ -487,7 +487,7 @@ vendor/etc/gpfspath_oem_config.xml
 # DRM widevine
 -vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 -vendor/lib64/mediadrm/libwvdrmengine.so
 -vendor/lib64/libwvhidl.so
 
@@ -567,7 +567,7 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 -vendor/bin/lowi-server
 -vendor/bin/slim_daemon
 -vendor/bin/xtra-daemon
--vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 -vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 -vendor/lib64/libcdfw.so
 -vendor/lib64/libcdfw_remote_api.so
