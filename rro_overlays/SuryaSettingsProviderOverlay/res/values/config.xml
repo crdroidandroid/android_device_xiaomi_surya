@@ -5,5 +5,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
-    <string name="def_device_name_simple">POCO X3 NFC</string>
+    <string name="def_device_name_simple" translatable="false">POCO X3 NFC</string>
 </resources>
