@@ -633,4 +633,10 @@
         <item>920</item> <!--item>sensorLocationY</item-->
         <item>220</item> <!--item>sensorRadius</item-->
     </array>
+
+    <!-- Minimum color temperature, in Kelvin, supported by Night display. -->
+    <integer name="config_nightDisplayColorTemperatureMin">1500</integer>
+
+    <!-- Maximum color temperature, in Kelvin, supported by Night display. -->
+    <integer name="config_nightDisplayColorTemperatureMax">5000</integer>
 </resources>
