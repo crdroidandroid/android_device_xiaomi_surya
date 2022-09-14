@@ -180,6 +180,8 @@
     <!-- Additional power used when bluetooth is on -->
     <item name="bluetooth.on">6.81</item>
 
+    <item name="bluetooth.controller.voltage">3300</item>
+
     <!-- Additional power used when WiFi is active -->
     <item name="wifi.active">189.89</item>
     <!-- Additional power used when WiFi is on -->
