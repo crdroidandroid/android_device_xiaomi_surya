@@ -90,6 +90,7 @@ void vendor_load_properties() {
     std::string fingerprint;
     std::string flavor;
     std::string description;
+    std::string marketname;
 
     if (hwname == "karna") {
         model = "M2007J20CI";
@@ -97,11 +98,13 @@ void vendor_load_properties() {
         device = "karna";
         fingerprint = "POCO/karna_in/karna:12/RKQ1.211019.001/V13.0.1.0.SJGINXM:user/release-keys";
         description = "karna_in-user 12 RKQ1.211019.001 V13.0.1.0.SJGINXM release-keys";
+        marketname = "POCO X3";
     } else {
         name = "surya_global";
         device = "surya";
         fingerprint = "POCO/surya_global/surya:12/RKQ1.211019.001/V13.0.1.0.SJGMIXM:user/release-keys";
         description = "surya_global-user 12 RKQ1.211019.001 V13.0.1.0.SJGMIXM release-keys";
+        marketname = "POCO X3 NFC";
 
         if (region == "THAI" || region == "THAI_PA")
             model = "M2007J20CT";
@@ -119,4 +122,6 @@ void vendor_load_properties() {
     property_override("ro.build.flavor", flavor.c_str());
     property_override("ro.build.product", device.c_str());
     property_override("ro.boot.hardware.revision", hardware_revision.c_str());
+    property_override("bluetooth.device.default_name", marketname.c_str());
+    property_override("vendor.usb.product_string", marketname.c_str());
 }
