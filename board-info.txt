@@ -1,0 +1,3 @@
+require version-baseband-CN=4.3.c5-00100,21.4.21
+require version-baseband-GLOBAL=4.3.c5-00100,V12.1.2.0.RFJMIXM
+require version-baseband-INDIA=4.3.c5-00100,V12.1.2.0.RFJINXM

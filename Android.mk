@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter davinci phoenix surya sweet toco violet,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),davinci)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

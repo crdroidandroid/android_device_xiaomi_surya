@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "UdfpsHandler.xiaomi_sm6150"
+#define LOG_TAG "UdfpsHandler.davinci"
 
 #include "UdfpsHandler.h"
 

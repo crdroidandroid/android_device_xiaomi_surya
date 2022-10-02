@@ -45,6 +45,12 @@ on init
     chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
     chmod 0660 /dev/cpuset/camera-daemon/tasks
 
+    # Camera motor
+    chown system camera /dev/drv8846_dev
+    chown system camera /dev/akm09970
+    chmod 0660 /dev/drv8846_dev
+    chmod 0660 /dev/akm09970
+
     # Boot time fs tuning
     write /sys/block/sda/queue/iostats 0
     write /sys/block/sda/queue/scheduler cfq
@@ -61,8 +67,17 @@ on init
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
 
+on init && property:ro.boot.hwc=GLOBAL
+    setprop ro.boot.product.hardware.sku davinci
+
+on init && property:ro.boot.hwc=CN
+    setprop ro.boot.product.hardware.sku davinci
+
+on property:ro.boot.product.hardware.sku=davinci
+    enable vendor.nfc_hal_service
+
 on fs
-    mount_all --early /vendor/etc/fstab.qcom
+    mount_all --early
 
     exec u:r:vendor_toolbox:s0 root audio bluetooth graphics media net_raw system vendor_rfs vendor_rfs_shared -- /vendor/bin/toybox_vendor find /mnt/vendor/persist -type d -exec /vendor/bin/toybox_vendor setfattr -x security.sehash {} \;
     restorecon_recursive /mnt/vendor/persist
@@ -73,7 +88,7 @@ on fs
 on late-fs
     wait_for_prop hwservicemanager.ready true
     exec_start wait_for_keymaster
-    mount_all --late /vendor/etc/fstab.qcom
+    mount_all --late
 
 on post-fs-data
     mkdir /data/vendor/nnhal 0700 system system
@@ -118,7 +133,7 @@ on property:sys.boot_completed=1
     write /proc/sys/vm/swappiness 100
 
     # Enable ZRAM on boot_complete
-    swapon_all /vendor/etc/fstab.zram
+    swapon_all /vendor/etc/fstab.qcom
 
     # Runtime fs tuning
     write /sys/block/sda/queue/read_ahead_kb 128
@@ -193,3 +208,17 @@ service vendor.nv_mac /vendor/bin/nv_mac
     user system
     group system inet net_admin wifi net_raw
     oneshot
+
+service vendor.motor /vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
+    class hal
+    user system
+    group system
+    writepid /dev/cpuset/system-background/tasks
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    override
+    class hal
+    user nfc
+    group nfc
+    writepid /dev/cpuset/system-background/tasks
+    disabled
