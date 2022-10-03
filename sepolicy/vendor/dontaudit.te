@@ -1,10 +1,28 @@
 dontaudit hal_audio_default sysfs:dir read;
 
+dontaudit hal_sensors_default vendor_diag_device:chr_file rw_file_perms;
+
 dontaudit init bt_firmware_file:filesystem getattr;
 dontaudit init firmware_file:filesystem getattr;
+
+dontaudit kernel self:qipcrtr_socket create;
 
 dontaudit priv_app bt_firmware_file:filesystem getattr;
 dontaudit priv_app firmware_file:filesystem getattr;
 dontaudit priv_app mnt_vendor_file:dir search;
 
+dontaudit rild vendor_diag_device:chr_file rw_file_perms;
+
+dontaudit vendor_cnd vendor_diag_device:chr_file rw_file_perms;
+
+dontaudit vendor_hal_imsrtp vendor_diag_device:chr_file rw_file_perms;
+
+dontaudit vendor_hal_rcsservice vendor_diag_device:chr_file rw_file_perms;
+
 dontaudit vendor_ims vendor_diag_device:chr_file rw_file_perms;
+
+dontaudit vendor_netmgrd vendor_diag_device:chr_file rw_file_perms;
+
+dontaudit vendor_qti vendor_diag_device:chr_file rw_file_perms;
+
+dontaudit vendor_sensors_qti vendor_diag_device:chr_file rw_file_perms;
