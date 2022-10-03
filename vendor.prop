@@ -108,9 +108,6 @@ ro.crypto.volume.metadata.method=dm-default-key
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.crypto.volume.options=::v2
 
-# Dalvik
-dalvik.vm.systemuicompilerfilter=speed
-
 # Data modules
 ro.telephony.iwlan_operation_mode=legacy
 
