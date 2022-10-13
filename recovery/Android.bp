@@ -1,9 +1,0 @@
-cc_library_static {
-    name: "librecovery_updater_xiaomi",
-    srcs: ["recovery_updater.cpp"],
-    static_libs: [
-        "libedify",
-        "libotautil",
-    ],
-}
-

@@ -52,7 +52,6 @@ PRODUCT_PACKAGES += \
     audio.primary.sm6150 \
     audio.usb.default \
     audio.r_submix.default \
-    audio_amplifier.sm6150 \
     sound_trigger.primary.sm6150
 
 PRODUCT_PACKAGES += \
@@ -122,11 +121,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
-# Camera motor
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.motor@1.0.vendor \
-    XiaomiPopupCamera
-
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
@@ -169,10 +163,6 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi
-
-PRODUCT_PACKAGES += \
-    libudfpshandler \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -358,9 +348,6 @@ PRODUCT_PACKAGES += \
     librmnetctl
 
 # Recovery
-PRODUCT_PACKAGES += \
-    librecovery_updater_xiaomi
-
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
 

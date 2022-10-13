@@ -43,7 +43,6 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 TARGET_OTA_ASSERT_DEVICE := davinci,davinciin
 
 # Audio
-AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
@@ -179,7 +178,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_xiaomi
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Screen density
@@ -189,12 +187,7 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_SEPOLICY_DIR := msmsteppe
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-
-# Udfps
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
-TARGET_USES_FOD_ZPOS := true
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2021-10-01

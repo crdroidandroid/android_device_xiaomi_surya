@@ -22,7 +22,6 @@ cc_binary {
     srcs: [
         ":vendor.lineage.livedisplay@2.0-sdm-pa",
         ":vendor.lineage.livedisplay@2.0-sdm-utils",
-        "AntiFlicker.cpp",
         "SunlightEnhancement.cpp",
         "service.cpp",
     ],

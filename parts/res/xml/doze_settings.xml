@@ -32,14 +32,6 @@
         android:summary="@string/ambient_display_always_on_summary"
         android:persistent="false" />
 
-    <ListPreference
-        android:key="doze_brightness"
-        android:defaultValue="0"
-        android:title="@string/doze_brightness_title"
-        android:summary="@string/doze_brightness_summary"
-        android:entries="@array/doze_brightness_level"
-        android:entryValues="@array/doze_brightness_level_mode" />
-
     <PreferenceCategory
         android:key="gestures"
         android:title="@string/ambient_display_gestures_title">

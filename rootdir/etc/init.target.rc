@@ -45,12 +45,6 @@ on init
     chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
     chmod 0660 /dev/cpuset/camera-daemon/tasks
 
-    # Camera motor
-    chown system camera /dev/drv8846_dev
-    chown system camera /dev/akm09970
-    chmod 0660 /dev/drv8846_dev
-    chmod 0660 /dev/akm09970
-
     # Boot time fs tuning
     write /sys/block/sda/queue/iostats 0
     write /sys/block/sda/queue/scheduler cfq
@@ -108,20 +102,9 @@ on boot
     chown system system /sys/class/thermal/thermal_message/sconfig
     write /sys/class/thermal/thermal_message/sconfig 10
 
-    # Set doze mode permissions
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/doze_status
-    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode
-    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_status
-
-    # Set xiaomi touch permissions
-    chown system system /dev/xiaomi-touch
-    chmod 0660 /dev/xiaomi-touch
-
     # Set fingerprint related permissions
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/irq
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/wakeup_enable
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui
 
     # Create fingerprint related directory
     mkdir /mnt/vendor/persist/goodix 0770 system system
@@ -195,24 +178,6 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     class main
     user root
     group system wakelock
-    writepid /dev/cpuset/system-background/tasks
-
-service vendor.remosaic_daemon /vendor/bin/remosaic_daemon
-    class late_start
-    user camera
-    group camera
-    writepid /dev/cpuset/system-background/tasks
-
-service vendor.nv_mac /vendor/bin/nv_mac
-    class main
-    user system
-    group system inet net_admin wifi net_raw
-    oneshot
-
-service vendor.motor /vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
-    class hal
-    user system
-    group system
     writepid /dev/cpuset/system-background/tasks
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service

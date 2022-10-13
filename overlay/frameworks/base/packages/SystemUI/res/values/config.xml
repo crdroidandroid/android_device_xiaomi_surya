@@ -21,9 +21,6 @@
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>
 
-    <!-- The radius of the enrollment progress bar, in dp -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">100</integer>
-
     <!-- Location on the screen of the center of the physical power button. -->
     <dimen name="physical_power_button_center_screen_location_y">950px</dimen>
 

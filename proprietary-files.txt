@@ -105,7 +105,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
 # Camera - from davinci V12.5.2.0.RFJCNXM
--vendor/bin/remosaic_daemon|1f092ffcd4b471ef2a540e7a1882eb5d87cd984b
 vendor/etc/camera/camxoverridesettings.txt|967d285e6f55b0f36bfb690e8244a23d050d4fdb
 vendor/etc/camera/eisoverridesettings.txt|4ea9ba43f55eaf0ac3106a0b63c49654af741270
 vendor/etc/camera/golden_rear_dc_cal_wu.bin|1a1f60f07b46d09d36fa3380e3e8b1bbb412937d
@@ -284,29 +283,6 @@ vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin|1ca031d5f8eb0e6aa3eedf7df8d5
 -vendor/lib64/libmialgo_sd.so|0a2ab306828eec76d618bf42f28007942af0d348
 -vendor/lib64/libmibokeh_712.so|b43fd723ce688731aaa97ae11869b60ffad1a032
 
-# Camera motor - from davinci V12.5.2.0.RFJCNXM
--vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service|d21d7ec9b5f72fef481eadc12645d031ff6c698a
-vendor/etc/step_motor/mi_camera_config.xml|7df5218b9549c81e6c4cfc8ee7b203ce45c21d4f
--vendor/lib64/hw/vendor.xiaomi.hardware.motor@1.0-impl.so|895f9229ee146dc1ea51dd047b8f91f6b4c750dd
--vendor/lib64/libmivendor_module_calibration.so|05ca1622c84f3939f6ef666d7aafb8b9dd3a8014
--vendor/lib64/libmivendor_module_hall.so|6bfeb67aac9fa379deff45885e94a580b9de629e
--vendor/lib64/libmivendor_module_motor.so|c5942cb432c1bb2508d889873877e27d462fc267
--vendor/lib64/mi.motor.daemon.so|dfbe97ae956b7c533f2e30e4019a57117d1cb2a8
-
-# Camera (popup sound effects) - from davinci V12.5.2.0.RFJCNXM
-media/audio/ui/popup_cangmen_down.ogg|573b107889ccf639db5455af21129ce1fee93bc5
-media/audio/ui/popup_cangmen_up.ogg|f152dea254b4eaae403b791c49c60c05ccf12ea7
-media/audio/ui/popup_chilun_down.ogg|e200a3de45abbf2057ca0c6a735b6a6a78ec1b1c
-media/audio/ui/popup_chilun_up.ogg|908bd714b58648c8861c0e56ca7c6f0db84d4e2b
-media/audio/ui/popup_jijia_down.ogg|680b41897aaa47972630012e0c68396bf4cbe9c7
-media/audio/ui/popup_jijia_up.ogg|bd71c2f07f439a2afc9e9b435ef8d1a7a28a4fc1
-media/audio/ui/popup_mofa_down.ogg|ebfec5126f64a5eea69aad43af169de5eed398ae
-media/audio/ui/popup_mofa_up.ogg|95ef57769ca5e4a3264e4adf7c9958d55ff1a32c
-media/audio/ui/popup_muqin_down.ogg|3ecf82ae3d4ec853e0832901d2163c252ad62e07
-media/audio/ui/popup_muqin_up.ogg|047ae904c2932bc6112cd7ef4458f4cad1972181
-media/audio/ui/popup_yingyan_down.ogg|de1623b20f311322dc79a3d152ca30318e1ed0db
-media/audio/ui/popup_yingyan_up.ogg|0c3a716ba49dd682a6d58cca04eece0f81ca6834
-
 # Charger
 -vendor/bin/hvdcp_opti
 
@@ -450,7 +426,6 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 -vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Fingerprint - from davinci V12.5.2.0.RFJCNXM
--vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.sm6150.so|679daa0f187bf648acbb9c894efd36e2ebf65eb1
 -vendor/lib64/libgf_hal.so|2e32b1f5f97c8bb028226d9b7e871c3435115d37
 
 # FM
@@ -838,13 +813,6 @@ vendor/etc/sensors/config/tcs3701.json|8d29c45995d2fa7ed1d01aeeb3a5be3db2a1725c
 vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
 vendor/etc/sensors/sns_reg_config|891e6e552b64c29b61744dd53ea373ea0ce0aa40
 
-# Soter
-vendor/app/SoterService/SoterService.apk
--vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
--vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
--vendor/lib64/vendor.qti.hardware.soter@1.0.so
-
 # Thermal - from davinci V12.5.2.0.RFJCNXM
 -vendor/bin/mi_thermald|28333a36cea8ae97f15c4b4eb09b23578b83dbf0
 -vendor/bin/thermal-engine|e74184e124c41e51535fad6a6ad9cc089695211b
@@ -873,6 +841,3 @@ vendor/firmware/goodix_gt9886_limit_f10_second.tporder|d8f38e5ee33d05353d38cc31b
 
 # WLAN
 -vendor/bin/cnss-daemon
-
-# Xiaomi MAC
--vendor/bin/nv_mac
