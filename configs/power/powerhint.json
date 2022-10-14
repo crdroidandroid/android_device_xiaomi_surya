@@ -15,7 +15,7 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "1248000",
+        "1612800",
         "576000"
       ],
       "ResetOnInit": true
@@ -35,6 +35,7 @@
       "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
+        "806400",
         "652800"
       ],
       "ResetOnInit": true
@@ -223,9 +224,15 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "806400"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "1248000"
+      "Value": "1612800"
     },
     {
       "PowerHint": "INTERACTION",
