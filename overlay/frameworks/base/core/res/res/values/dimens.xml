@@ -27,9 +27,9 @@
 
     <!-- Radius of the software rounded corners at the top of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_top">106px</dimen>
+    <dimen name="rounded_corner_radius_top">91px</dimen>
 
     <!-- Radius of the software rounded corners at the bottom of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_bottom">106px</dimen>
+    <dimen name="rounded_corner_radius_bottom">89px</dimen>
 </resources>
