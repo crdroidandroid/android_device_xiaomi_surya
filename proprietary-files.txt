@@ -385,6 +385,11 @@ vendor/lib64/camera/fdconfigvideolite.bin
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# Camera face detection
+vendor/etc/camera/megviifacepp_0_5_2_model:vendor/etc/camera/facedetectpp_0_5_2_model
+-vendor/lib64/libMegviiFacepp-0.5.2.so:vendor/lib64/libFaceDetectpp-0.5.2.so
+-vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so
+
 # Charger
 -vendor/bin/hvdcp_opti
 
