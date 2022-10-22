@@ -16,11 +16,26 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Профілі оптимізації</string>
+    <string name="thermal_summary">Встановити профілі оптимізації для оптимальної продуктивності застосунків</string>
+    <string name="thermal_default">За замовчуванням</string>
+    <string name="thermal_benchmark">Бенчмарк</string>
+    <string name="thermal_browser">Браузер</string>
+    <string name="thermal_camera">Камера</string>
+    <string name="thermal_dialer">Дзвінки</string>
+    <string name="thermal_gaming">Ігри</string>
+    <string name="thermal_streaming">Стрімінговий сервіс</string>
+   
     <!-- Dirac settings -->
+    <string name="dirac_enable">Активувати dirac</string>
     <string name="dirac_title">Покращення звуку \"Мі Sound\"</string>
     <string name="dirac_summary">Поліпшити якість звуку</string>
     <string name="dirac_headset_title">Тип навушників</string>
     <string name="dirac_preset_title">Виберіть налаштування</string>
+    <string name="dirac_hifi_enable_title">Активувати Hi-fi</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Зменшити шум і спотворення, та поліпшити якість звуку</string>
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_default">За замовчуванням</string>
     <string name="dirac_headset_earbuds">Навушники Xiaomi</string>
@@ -44,6 +59,7 @@
     <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
     <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
     <string name="dirac_headset_earphone">Mi Earphones</string>
+    
     <!-- Dirac settings: Equalizer presets -->
     <string name="dirac_preset_default">За замовчуванням</string>
     <string name="dirac_preset_rock">Рок</string>
@@ -56,4 +72,40 @@
     <string name="dirac_preset_country">Кантрі</string>
     <string name="dirac_preset_dance">Танцювальна</string>
     <string name="dirac_preset_metal">Метал</string>
+    <string name="dirac_preset_bass_booster">Посилення басу</string>
+    <string name="dirac_preset_live">Жива музика</string>
+    <string name="dirac_preset_balanced">Збалансованмй</string>
+    <string name="dirac_preset_bass_reduction">Менше басів</string>
+    <string name="dirac_preset_treble_reduction">Менше високих частот</string>
+    <string name="dirac_preset_soft_bass">М\'який бас</string>
+    <string name="dirac_preset_soft_treble">М\'які високі частоти</string>
+
+    <!-- Dirac Sound Enhancer tile -->
+    <string name="dirac_qs_tile_title">Покращення звуку \"Мі Sound\"</string>
+
+    <!-- Refresh Rate Settings -->
+    <string name="refresh_rate_tile_title">частота оновлення</string>
+    <string name="refresh_title">Частота оновлення для застосунків</string>
+    <string name="refresh_summary">Налаштування максимальної частоти оновлення для кожного застосунку</string>
+    <string name="refresh_default">За замовчуванням</string>
+    <string name="refresh_low">Низька (30Гц)</string>
+    <string name="refresh_moderate">Середня (50 Гц)</string>
+    <string name="refresh_standard">Стандартна (60Гц)</string>
+    <string name="refresh_high">Висока (90Гц)</string>
+    <string name="refresh_extreme">Плавна (120Гц)</string>
+
+    <!-- Haptic Level Settings -->
+    <string name="haptic_title">Тактильний відгук</string>
+    <string name="haptic_warning">Встановлення надто високого рівня тактильного відгуку може призвести до незворотним пошкодженням обладнання, використовуйте на свій страх і ризик</string>
+    <string name="haptic_summary">Налаштування інтенсивності вібрації</string>
+    <string name="haptic_level_title">Рівень</string>
+    <string name="haptic_level_summary">Сила інтенсивності вібрації</string>
+    <string name="haptic_level_summary_incompatible">Функція не підтримується</string>
+
+    <!-- Scene Selection -->
+    <string name="music_headset_scenario_select">Виберіть сцену</string>
+    <string name="music_headset_scenario_intelligent">Розумна</string>
+    <string name="music_headset_scenario_music">Музика</string>
+    <string name="music_headset_scenario_video">Відео</string>
+    <string name="music_headset_scenario_vocal">Голос</string>
 </resources>

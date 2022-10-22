@@ -17,10 +17,15 @@
 -->
 <resources>
     <!-- Dirac settings -->
+    <string name="dirac_enable">Usar Mi Sound Enhancer</string>
     <string name="dirac_title">Mi Sound Enhancer</string>
     <string name="dirac_summary">Optimizar la calidad del audio</string>
     <string name="dirac_headset_title">Selecciona el tipo de auriculares</string>
     <string name="dirac_preset_title">Selecciona un preajuste</string>
+    <string name="dirac_hifi_enable_title">Habilitar Hi-fi</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Aumenta la calidad del audio disminuyendo el ruido y la distorsión</string>
+
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_default">Predeterminado</string>
     <string name="dirac_headset_earbuds">Auriculares de tapón Mi</string>
@@ -44,6 +49,7 @@
     <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
     <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
     <string name="dirac_headset_earphone">Mi Earphones</string>
+
     <!-- Dirac settings: Equalizer presets -->
     <string name="dirac_preset_default">Predeterminado</string>
     <string name="dirac_preset_rock">Rock</string>
@@ -56,4 +62,48 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+    <string name="dirac_preset_bass_booster">Potenciador de graves</string>
+    <string name="dirac_preset_live">Directo</string>
+    <string name="dirac_preset_balanced">Equilibrado</string>
+    <string name="dirac_preset_bass_reduction">Reducción de graves</string>
+    <string name="dirac_preset_treble_reduction">Reducción de agudos</string>
+    <string name="dirac_preset_soft_bass">Graves suaves</string>
+    <string name="dirac_preset_soft_treble">Agudos suaves</string>
+
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Perfiles Térmicos</string>
+    <string name="thermal_summary">Ajusta los perfiles térmicos por aplicación para un rendimiento óptimo</string>
+    <string name="thermal_default">Por defecto</string>
+    <string name="thermal_benchmark">Benchmark</string>
+    <string name="thermal_browser">Navegador</string>
+    <string name="thermal_camera">Cámara</string>
+    <string name="thermal_dialer">Teléfono</string>
+    <string name="thermal_gaming">Gaming</string>
+    <string name="thermal_streaming">Streaming</string>
+
+    <!-- Refresh Rate Settings -->
+    <string name="refresh_rate_tile_title">Tasa de refresco</string>
+    <string name="refresh_title">Tasa de refresco por aplicación</string>
+    <string name="refresh_summary">Defina la tasa de refresco máxima para una aplicación específica</string>
+    <string name="refresh_default">Por defecto</string>
+    <string name="refresh_low">Baja (30Hz)</string>
+    <string name="refresh_moderate">Moderada (50Hz)</string>
+    <string name="refresh_standard">Standard (60Hz)</string>
+    <string name="refresh_high">Alta (90Hz)</string>
+    <string name="refresh_extreme">Fluida (120Hz)</string>
+
+    <!-- Haptic Level Settings -->
+    <string name="haptic_title">Retroalimentación háptica</string>
+    <string name="haptic_warning">La configuración de un nivel háptico demasiado alto puede causar daños permanentes en el hardware, utilícelo bajo su propio riesgo</string>
+    <string name="haptic_summary">Personaliza la intensidad de la vibración</string>
+    <string name="haptic_level_title">Nivel</string>
+    <string name="haptic_level_summary">Cantidad de intensidad de vibración</string>
+    <string name="haptic_level_summary_incompatible">Función no admitida</string>
+
+    <!-- Scene Selection -->
+    <string name="music_headset_scenario_select">Seleccionar escena</string>
+    <string name="music_headset_scenario_intelligent">Inteligente</string>
+    <string name="music_headset_scenario_music">Música</string>
+    <string name="music_headset_scenario_video">Video</string>
+    <string name="music_headset_scenario_vocal">Voz</string>
 </resources>

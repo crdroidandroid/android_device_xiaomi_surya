@@ -17,10 +17,14 @@
 -->
 <resources>
     <!-- Dirac settings -->
+    <string name="dirac_enable">Korzystaj z Mi Sound Enhancer</string>
     <string name="dirac_title">Ulepszanie dźwięku Mi</string>
     <string name="dirac_summary">Optymalizuj jakość dźwięku</string>
     <string name="dirac_headset_title">Typ słuchawek</string>
     <string name="dirac_preset_title">Wybierz konfigurację</string>
+    <string name="dirac_hifi_enable_title">Włącz Hi-fi</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Zredukuj szum oraz zniekształcenia w celu poprawy jakości dźwięku</string>
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_default">Domyślny</string>
     <string name="dirac_headset_earbuds">Douszne Mi</string>
@@ -56,4 +60,16 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Taniec</string>
     <string name="dirac_preset_metal">Metal</string>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Profile Termalne</string>
+    <string name="thermal_summary">Dostosuj profile termalne dla poszczególnych aplikacji dla optymalnej wydajności</string>
+    <string name="thermal_default">Domyślne</string>
+    <string name="thermal_benchmark">Benchmark</string>
+    <string name="thermal_browser">Przeglądarka</string>
+    <string name="thermal_camera">Aparat</string>
+    <string name="thermal_dialer">Telefon</string>
+    <string name="thermal_gaming">Gry</string>
+    <string name="thermal_streaming">Streamowanie</string>
+    <!-- Refresh Rate Settings -->
+    <string name="refresh_rate_tile_title">Częstotliwość odświeżania</string>
 </resources>

@@ -16,9 +16,24 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Температурный режим (профиль)</string>
+    <string name="thermal_summary">Выбрать Температурный профиль приложения для оптимизации работы</string>
+    <string name="thermal_default">Стандартный</string>
+    <string name="thermal_benchmark">Бенчмарк</string>
+    <string name="thermal_browser">Браузер</string>
+    <string name="thermal_camera">Камера</string>
+    <string name="thermal_dialer">Приложение для звонков</string>
+    <string name="thermal_gaming">Игра</string>
+    <string name="thermal_streaming">Стриминговый сервис</string>
+
     <!-- Dirac settings -->
+    <string name="dirac_enable">Включить dirac</string>
     <string name="dirac_title">Улучшение звука Mi</string>
     <string name="dirac_summary">Улучшить качество звука</string>
+    <string name="dirac_hifi_enable_title">Включить Hi-fi</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Уменьшает шум и искажения. Улучшает качество звука</string>
     <string name="dirac_headset_title">Тип наушников</string>
     <string name="dirac_preset_title">Выберите настройку</string>
     <!-- Dirac settings: Headset types -->
@@ -44,6 +59,7 @@
     <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
     <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
     <string name="dirac_headset_earphone">Mi Earphones</string>
+
     <!-- Dirac settings: Equalizer presets -->
     <string name="dirac_preset_default">По умолчанию</string>
     <string name="dirac_preset_rock">Рок</string>
@@ -56,4 +72,40 @@
     <string name="dirac_preset_country">Кантри</string>
     <string name="dirac_preset_dance">Танцевальная</string>
     <string name="dirac_preset_metal">Металл</string>
+    <string name="dirac_preset_bass_booster">Усиление баса</string>
+    <string name="dirac_preset_live">Живая музыка</string>
+    <string name="dirac_preset_balanced">Сбалансированный</string>
+    <string name="dirac_preset_bass_reduction">Меньше басов</string>
+    <string name="dirac_preset_treble_reduction">Меньше высоких частот</string>
+    <string name="dirac_preset_soft_bass">Мягкий бас</string>
+    <string name="dirac_preset_soft_treble">Мягкие высокие частоты</string>
+
+    <!-- Dirac Sound Enhancer tile -->
+    <string name="dirac_qs_tile_title">Улучшение звука Mi</string>
+
+    <!-- Refresh Rate Settings -->
+    <string name="refresh_rate_tile_title">Частота обновления</string>
+    <string name="refresh_title">Частота обновления для приложений</string>
+    <string name="refresh_summary">Настройка максимальной частоты обновления для каждого приложения</string>
+    <string name="refresh_default">По умолчанию</string>
+    <string name="refresh_low">Низкая (30Гц)</string>
+    <string name="refresh_moderate">Средняя (50 Гц)</string>
+    <string name="refresh_standard">Стандартная (60Гц)</string>
+    <string name="refresh_high">Высокая (90Гц)</string>
+    <string name="refresh_extreme">Плавная (120Гц)</string>
+    
+    <!-- Haptic Level Settings -->
+    <string name="haptic_title">Тактильный отклик</string>
+    <string name="haptic_warning">Установка слишком высокого уровня тактильного отклика может привести к необратимому повреждению оборудования, используйте на свой страх и риск</string>
+    <string name="haptic_summary">Настройка интенсивности вибрации</string>
+    <string name="haptic_level_title">Уровень</string>
+    <string name="haptic_level_summary">Сила интенсивности вибрации</string>
+    <string name="haptic_level_summary_incompatible">Функция не поддерживается</string>
+
+    <!-- Scene Selection -->
+    <string name="music_headset_scenario_select">Выберите сцену</string>
+    <string name="music_headset_scenario_intelligent">Умная</string>
+    <string name="music_headset_scenario_music">Музыка</string>
+    <string name="music_headset_scenario_video">Видео</string>
+    <string name="music_headset_scenario_vocal">Голос</string>
 </resources>
