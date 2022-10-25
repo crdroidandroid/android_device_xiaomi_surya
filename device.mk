@@ -323,16 +323,24 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
 PRODUCT_PACKAGES += \
-    KarnaPowerProfile \
-    KarnaSettingsProviderOverlay \
-    SuryaPowerProfile \
-    SuryaSettingsProviderOverlay
+    J20CCarrierConfig \
+    J20CFrameworks \
+    J20CSettings \
+    J20CSettingsProvider \
+    J20CSystemUI \
+    J20CTelephony \
+    J20CWifiResources \
+    KarnaFrameworks \
+    KarnaSettingsProvider \
+    KarnaWifiResources \
+    SuryaFrameworks \
+    SuryaSettingsProvider \
+    SuryaWifiResources
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -362,7 +370,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
-    CarrierConfigOverlay \
     libjson \
     libril \
     librilutils \
@@ -458,13 +465,8 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml \
     libwpa_client \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
-
-PRODUCT_PACKAGES += \
-    KarnaWifiOverlay \
-    SuryaWifiOverlay
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
