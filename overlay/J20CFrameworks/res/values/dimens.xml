@@ -10,7 +10,7 @@
          -->
     <dimen name="status_bar_height_default">28dp</dimen>
     <dimen name="status_bar_height_portrait">98px</dimen>
-    <dimen name="status_bar_height_landscape">28dp</dimen>
+    <dimen name="status_bar_height_landscape">@dimen/status_bar_height_default</dimen>
 
     <!-- Radius of the software rounded corners at the top of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
