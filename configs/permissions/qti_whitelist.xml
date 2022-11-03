@@ -43,7 +43,5 @@
     <hidden-api-whitelisted-app package="com.qualcomm.qti.radioconfiginterface" />
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteclient" />
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteserver" />
-    <hidden-api-whitelisted-app package="com.qualcomm.wfd.client" />
-    <hidden-api-whitelisted-app package="com.qualcomm.wfd.service" />
     <hidden-api-whitelisted-app package="org.codeaurora.ims" />
 </config>
