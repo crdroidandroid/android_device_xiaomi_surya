@@ -604,7 +604,4 @@
         <item>115</item> <!--item>sensorRadius</item-->
     </array>
 
-    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
-    <bool name="config_zramWriteback">true</bool>
-
 </resources>
