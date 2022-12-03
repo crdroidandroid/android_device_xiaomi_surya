@@ -201,6 +201,10 @@ on post-fs-data
 
     setprop vold.post_fs_data_done 1
 
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
 on property:sys.boot_completed=1
     chown media audio /sys/kernel/wdsp0/boot
 
