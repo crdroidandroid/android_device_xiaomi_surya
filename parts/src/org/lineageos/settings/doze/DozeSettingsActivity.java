@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2015-2016 The CyanogenMod Project
+ *               2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,32 +15,23 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.thermal;
+package org.lineageos.settings.doze;
 
 import android.os.Bundle;
-import android.view.MenuItem;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.android.settingslib.collapsingtoolbar.R;
 
-public class ThermalActivity extends CollapsingToolbarBaseActivity {
-
-    private static final String TAG_THERMAL = "thermal";
-    private static final String THERMAL_SCONFIG = "/sys/class/thermal/thermal_message/sconfig";
+public class DozeSettingsActivity extends CollapsingToolbarBaseActivity {
+    private static final String TAG_DOZE = "doze";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction().replace(R.id.content_frame,
-                new ThermalSettingsFragment(), TAG_THERMAL).commit();
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            onBackPressed();
-            return true;
-        }
-        return false;
+        getFragmentManager()
+                .beginTransaction()
+                .replace(R.id.content_frame, new DozeSettingsFragment(), TAG_DOZE)
+                .commit();
     }
 }

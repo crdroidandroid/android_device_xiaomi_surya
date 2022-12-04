@@ -27,9 +27,6 @@ import org.lineageos.settings.utils.FileUtils;
 
 public final class ThermalUtils {
 
-    private static final String THERMAL_CONTROL = "thermal_control";
-    private static final String THERMAL_SERVICE = "thermal_service";
-
     protected static final int STATE_DEFAULT = 0;
     protected static final int STATE_BENCHMARK = 1;
     protected static final int STATE_BROWSER = 2;
@@ -37,7 +34,7 @@ public final class ThermalUtils {
     protected static final int STATE_DIALER = 4;
     protected static final int STATE_GAMING = 5;
     protected static final int STATE_STREAMING = 6;
-
+    private static final String THERMAL_CONTROL = "thermal_control";
     private static final String THERMAL_STATE_DEFAULT = "0";
     private static final String THERMAL_STATE_BENCHMARK = "10";
     private static final String THERMAL_STATE_BROWSER = "11";
@@ -61,26 +58,11 @@ public final class ThermalUtils {
         mSharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
     }
 
-    public static void initialize(Context context) {
-        if (isServiceEnabled(context))
-            startService(context);
-        else
-            setDefaultThermalProfile();
-    }
-
-    protected static void startService(Context context) {
-        context.startServiceAsUser(new Intent(context, ThermalService.class),
-                UserHandle.CURRENT);
-        PreferenceManager.getDefaultSharedPreferences(context).edit().putString(THERMAL_SERVICE, "true").apply();
-    }
-
-    protected static void stopService(Context context) {
-        context.stopService(new Intent(context, ThermalService.class));
-        PreferenceManager.getDefaultSharedPreferences(context).edit().putString(THERMAL_SERVICE, "false").apply();
-    }
-
-    protected static boolean isServiceEnabled(Context context) {
-        return true;
+    public static void startService(Context context) {
+        if (FileUtils.fileExists(THERMAL_SCONFIG)) {
+            context.startServiceAsUser(new Intent(context, ThermalService.class),
+                    UserHandle.CURRENT);
+        }
     }
 
     private void writeValue(String profiles) {
@@ -89,6 +71,11 @@ public final class ThermalUtils {
 
     private String getValue() {
         String value = mSharedPrefs.getString(THERMAL_CONTROL, null);
+
+        if (value != null) {
+             String[] modes = value.split(":");
+             if (modes.length < 5) value = null;
+         }
 
         if (value == null || value.isEmpty()) {
             value = THERMAL_BENCHMARK + ":" + THERMAL_BROWSER + ":" + THERMAL_CAMERA + ":" +
@@ -152,7 +139,7 @@ public final class ThermalUtils {
         return state;
     }
 
-    protected static void setDefaultThermalProfile() {
+    protected void setDefaultThermalProfile() {
         FileUtils.writeLine(THERMAL_SCONFIG, THERMAL_STATE_DEFAULT);
     }
 

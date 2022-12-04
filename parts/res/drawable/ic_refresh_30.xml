@@ -4,7 +4,7 @@
     android:height="24dp"
     android:viewportWidth="24"
     android:viewportHeight="24"
-    android:tint="?android:attr/colorAccent">
+    android:tint="#000000">
   <group android:scaleX="0.11024979"
       android:scaleY="0.11024979"
       android:translateX="2.5736434"
