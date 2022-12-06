@@ -1,1 +1,0 @@
-allow untrusted_app_30 selinuxfs:file { read };
