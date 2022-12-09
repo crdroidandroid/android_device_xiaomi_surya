@@ -172,7 +172,7 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -vendor/lib64/libmialgo_utils.so
 -vendor/lib64/libmialgoengine.so
 -vendor/lib64/libmibokeh_712.so
--vendor/lib64/libmpbase.so
+-vendor/lib64/libmpbase.so;MODULE=libmpbase_vendor
 -vendor/lib64/libremosaic_wrapper.so
 -vendor/lib64/libremosaiclib.so
 -vendor/lib64/libsdk_sr.so
