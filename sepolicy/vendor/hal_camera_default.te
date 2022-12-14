@@ -13,3 +13,4 @@ set_prop(hal_camera_default, vendor_camera_prop)
 allow hal_camera_default proc_stat:file r_file_perms;
 allow hal_camera_default aac_drc_prop:file { getattr  map  open };
 allow hal_camera_default ab_update_gki_prop:file { getattr  open };
+allow hal_camera_default default_prop:file { read };
