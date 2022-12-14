@@ -33,7 +33,7 @@
         com.dsi.ant@1.0::I*/* (/vendor/lib64/hw/)
         vendor.qti.hardware.btconfigstore@1.0::I*/* (/vendor/lib64/hw/)
 -->
-<manifest version="5.0" type="device" target-level="5">
+<manifest version="5.0" type="device" target-level="4">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
