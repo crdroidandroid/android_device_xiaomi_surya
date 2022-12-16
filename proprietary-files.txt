@@ -336,10 +336,6 @@ vendor/etc/camera/score_icon.png
 vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/watermark_font_2300_3199.dat
 
-# Camera provider
--vendor/lib/android.hardware.camera.provider@2.4-legacy.so
--vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-
 # Camera sensors
 -vendor/lib64/camera/com.qti.sensor.ofilm_hi259.so
 -vendor/lib64/camera/com.qti.sensor.ofilm_imx682.so
