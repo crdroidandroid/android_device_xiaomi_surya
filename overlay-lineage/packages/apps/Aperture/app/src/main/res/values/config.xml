@@ -9,9 +9,9 @@
 
     <!-- List of ID of auxiliary cameras that must be ignored by the app. -->
     <string-array name="config_ignoredAuxCameraIds">
-        <item>5</item>
-        <item>6</item>
-	<item>7</item>
+        <item>61</item>
+        <item>100</item>
+        <item>101</item>
     </string-array>
 
     <!-- An array of triplets made of (camera ID, qualities, framerates).
