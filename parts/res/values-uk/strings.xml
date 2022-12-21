@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Ambient settings -->
+    <string name="ambient_enable">Увімкнути Ambient Display</string>
+    <string name="doze_brightness_title">Яскравість Ambient Display</string>
+    <string name="doze_brightness_summary">Режим %s увімкнено</string>
+
+    <!-- Dirac settings -->
+    <string name="dirac_enable">Увімкнути поліпшення звуку Mi</string>
+    <string name="dirac_title">Поліпшення звуку Mi</string>
+    <string name="dirac_summary">Поліпшення якості звуку за допомогою Dirac, Hi-Fi</string>
+    <string name="dirac_headset_title">Тип навушників</string>
+    <string name="dirac_hifi_enable_title">Увімкнути Hi-Fi</string>
+    <string name="dirac_preset_title">Оберіть налаштування</string>
+
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Зниження шуму та спотворень і поліпшення якості звуку</string>
+
+    <string name="dirac_headset_earbuds">Mi Earbuds</string>
+    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
+    <string name="dirac_headset_piston_1">Mi Piston-1</string>
+    <string name="dirac_headset_general_inear">General In-Ear</string>
+    <string name="dirac_headset_piston_basic">Basic Edition</string>
+    <string name="dirac_headset_piston_2">Mi Piston-2</string>
+    <string name="dirac_headset_piston_standard">Standard Edition</string>
+    <string name="dirac_headset_piston_youth">Youth Edition</string>
+    <string name="dirac_headset_piston_color">Color Edition</string>
+    <string name="dirac_headset_in_ear">Mi In-Ear</string>
+    <string name="dirac_headset_capsule">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
+    <string name="dirac_headset_comfort">Mi Comfort</string>
+    <string name="dirac_headset_reduction_noise">Mi Noise Cancelling Type-C</string>
+    <string name="dirac_headset_cancelling">Mi Noise Cancelling 3.5mm</string>
+    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
+    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
+    <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
+    <string name="dirac_headset_earphone">Mi Earphones</string>
+    <string name="dirac_headset_ear_four">Mi Quadruple Driver Earphones</string>
+    <string name="dirac_headset_piston_typec">Mi In-Ear Headphones (Type-C)</string>
+    <string name="dirac_headset_bluetooth_collar">Mi Bluetooth Neckband</string>
+    <string name="dirac_headset_bluetooth_linefree">Mi Bluetooth Earphones</string>
+    <string name="dirac_headset_redmi_earphones">Redmi Earphones</string>
+
+    <string name="dirac_preset_default">За замовчуванням</string>
+    <string name="dirac_preset_rock">Рок</string>
+    <string name="dirac_preset_jazz">Джаз</string>
+    <string name="dirac_preset_pop">Поп</string>
+    <string name="dirac_preset_classical">Класика</string>
+    <string name="dirac_preset_hiphop">Хіп-хоп</string>
+    <string name="dirac_preset_blues">Блюз</string>
+    <string name="dirac_preset_electronic">Електронна</string>
+    <string name="dirac_preset_country">Кантрі</string>
+    <string name="dirac_preset_dance">Танцювальна</string>
+    <string name="dirac_preset_metal">Метал</string>
+    <string name="dirac_preset_bass_booster">Підсилювач басів</string>
+    <string name="dirac_preset_live">Жива</string>
+    <string name="dirac_preset_balanced">Збалансована</string>
+    <string name="dirac_preset_bass_reduction">Зменшення басів</string>
+    <string name="dirac_preset_treble_reduction">Зменшення високих частот</string>
+    <string name="dirac_preset_soft_bass">Мякі баси</string>
+    <string name="dirac_preset_soft_treble">Мякі високі частоти</string>
+
+    <string name="music_headset_scenario_intelligent">Інтелектуальний</string>
+    <string name="music_headset_scenario_music">Музика</string>
+    <string name="music_headset_scenario_select">Оберіть режим</string>
+    <string name="music_headset_scenario_video">Відео</string>
+    <string name="music_headset_scenario_vocal">Голос</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Очищення динаміка</string>
+    <string name="clear_speaker_summary">Відтворити 30-и секундний звук для очищення динаміка</string>
+    <string name="clear_speaker_description">Увімкніть цей параметр 1-2 рази, якщо динамік трохи забруднений. Також поставте звук на максимальну гучність.\n\nЯкщо динамік сильно забруднений, запустіть цей параметр 2-5 разів і потрясіть телефон. Динамік має дивитися вниз.\n\nУВАГА: Переконайтеся, що навушники вимкнені.</string>
+
+    <!-- Refresh Rate Settings -->
+    <string name="refresh_rate_tile_title">Частота оновлення</string>
+    <string name="refresh_title">Частота оновлення додатків</string>
+    <string name="refresh_summary">Налаштування максимальної частоти оновлення для кожного додатку</string>
+    <string name="refresh_default">За замовчуванням</string>
+    <string name="refresh_low">Низька (30Hz)</string>
+    <string name="refresh_moderate">Середня (50Hz)</string>
+    <string name="refresh_standard">Стандартна (60Hz)</string>
+    <string name="refresh_high">Висока (90Hz)</string>
+    <string name="refresh_extreme">Плавна (120Hz)</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Профілі оптимізації</string>
+    <string name="thermal_summary">Налаштування профілів для кожного додатку</string>
+    <string name="thermal_default">Без оптимізації</string>
+    <string name="thermal_benchmark">Продуктивність</string>
+    <string name="thermal_browser">Браузер</string>
+    <string name="thermal_camera">Камера</string>
+    <string name="thermal_dialer">Дзвінки</string>
+    <string name="thermal_gaming">Ігри</string>
+    <string name="thermal_streaming">Потокові додатки</string>
+
+</resources>
