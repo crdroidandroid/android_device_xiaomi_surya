@@ -66,11 +66,6 @@
     <string name="music_headset_scenario_video">Відео</string>
     <string name="music_headset_scenario_vocal">Голос</string>
 
-    <!-- Clear Speaker -->
-    <string name="clear_speaker_title">Очищення динаміка</string>
-    <string name="clear_speaker_summary">Відтворити 30-и секундний звук для очищення динаміка</string>
-    <string name="clear_speaker_description">Увімкніть цей параметр 1-2 рази, якщо динамік трохи забруднений. Також поставте звук на максимальну гучність.\n\nЯкщо динамік сильно забруднений, запустіть цей параметр 2-5 разів і потрясіть телефон. Динамік має дивитися вниз.\n\nУВАГА: Переконайтеся, що навушники вимкнені.</string>
-
     <!-- Refresh Rate Settings -->
     <string name="refresh_rate_tile_title">Частота оновлення</string>
     <string name="refresh_title">Частота оновлення додатків</string>

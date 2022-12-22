@@ -18,6 +18,7 @@
 <resources>
 
     <!-- Haptic Feedback Levels -->
-   <integer name="haptic_level_default">80</integer>
-   <integer name="haptic_level_max">100</integer>
+    <integer name="haptic_level_default">80</integer>
+    <integer name="haptic_level_max">100</integer>
+
 </resources>

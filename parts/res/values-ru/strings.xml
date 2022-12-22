@@ -66,11 +66,6 @@
     <string name="music_headset_scenario_video">Видео</string>
     <string name="music_headset_scenario_vocal">Голос</string>
 
-    <!-- Clear Speaker -->
-    <string name="clear_speaker_title">Очистка динамика</string>
-    <string name="clear_speaker_summary">Воспроизвести 30-и секундный звук для очистки динамика</string>
-    <string name="clear_speaker_description">Включите этот параметр 1-2 раз, если динамик немного загрязнен. Также поставьте звук на максимальную громкость.\n\nЕсли динамик сильно загрязнен, запустите этот параметр 2-5 раз и потрясите телефон. Динамик должен смотреть вниз.\n\nВНИМАНИЕ: Убедитесь, что наушники отключены.</string>
-
     <!-- Refresh Rate Settings -->
     <string name="refresh_rate_tile_title">Частота обновления</string>
     <string name="refresh_title">Частота обновления приложений</string>
