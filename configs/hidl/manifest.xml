@@ -215,7 +215,6 @@
         <name>vendor.lineage.livedisplay</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::IPictureAdjustment/default</fqname>
-        <fqname>@2.1::IAdaptiveBacklight/default</fqname>
         <fqname>@2.1::ISunlightEnhancement/default</fqname>
     </hal>
     <hal format="hidl">
