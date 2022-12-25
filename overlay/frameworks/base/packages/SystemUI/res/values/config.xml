@@ -30,12 +30,6 @@
     <!-- FPSInfoService FPS node file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
 
-    <!-- The CPU temperature sensor path, defaults to empty -->
-    <string name="config_cpuTempSensor" translatable="false">/sys/devices/virtual/thermal/thermal_zone0/temp</string>
-
-    <!-- The CPU temperature divider, if needed -->
-    <integer name="config_cpuTempDivider" translatable="false">1000</integer>
-
     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
     vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>

@@ -1,4 +1,4 @@
-Copyright (C) 2020 The LineageOS Project
+Copyright (C) 2023 The LineageOS Project
 
 Unified Device Tree for Xiaomi POCO X3 NFC / X3
 ===============================================
@@ -26,4 +26,4 @@ Display | 1080 x 2400 pixels, 20:9 ratio, 6.67 inches, IPS LCD (~395 ppi density
 
 ## Device picture
 
-![Xiaomi POCO X3 / X3 NFC](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-poco-x3-nfc-1.jpg "Xiaomi POCO X3 NFC")
+![Xiaomi POCO X3 / X3 NFC](https://i01.appmifile.com/webfile/globalimg/products/pc/poco-x3-nfc/specs-header.png "Xiaomi POCO X3 NFC")
