@@ -185,6 +185,9 @@ vendor.audio.dolby.ds2.enabled=true
 vendor.audio.dolby.ds2.hardbypass=true
 ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
 
+# Disable Remote Keygaurd animation
+persist.wm.enable_remote_keyguard_animation=0
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
