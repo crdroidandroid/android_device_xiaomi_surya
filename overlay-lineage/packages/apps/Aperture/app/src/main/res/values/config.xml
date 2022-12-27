@@ -4,6 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+
     <!-- Enable auxiliary cameras selector. -->
     <bool name="config_enableAuxCameras">true</bool>
 
@@ -41,4 +42,5 @@
         <item>0</item> <item>fhd</item> <item>60|120</item>
 	<item>1</item> <item>fhd</item> <item>30</item>
     </string-array>
+
 </resources>
