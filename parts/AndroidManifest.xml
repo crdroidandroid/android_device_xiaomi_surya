@@ -88,9 +88,6 @@
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/thermal_summary" />
-            <meta-data
-                android:name="com.android.settings.order"
-                android:value="1" />
         </activity>
 
         <activity
