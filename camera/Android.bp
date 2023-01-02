@@ -5,6 +5,13 @@
 //
 
 cc_library_shared {
+    name: "libshim_megvii",
+
+    proprietary: true,
+    srcs: ["megvii_shim.cpp"],
+}
+
+cc_library_shared {
     name: "libpiex_shim",
     srcs: [
         "libpiex_shim.cpp",
