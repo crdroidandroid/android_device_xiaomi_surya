@@ -1,2 +1,6 @@
-vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon u:object_r:hal_fingerprint_hwservice_xiaomi:s0
-vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemonExt u:object_r:hal_fingerprint_hwservice_xiaomi:s0
+vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon              u:object_r:hal_fingerprint_hwservice_xiaomi:s0
+vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemonExt           u:object_r:hal_fingerprint_hwservice_xiaomi:s0
+
+# Nfc
+vendor.nxp.nxpnfc::INxpNfc                                                           u:object_r:hal_nxpnfc_hwservice:s0
+vendor.nxp.nxpese::INxpEse                                                           u:object_r:hal_nxpese_hwservice:s0
