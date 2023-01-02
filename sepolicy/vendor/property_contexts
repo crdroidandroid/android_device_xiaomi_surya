@@ -1,3 +1,8 @@
+# Audio
+tas.smartpa.debug.disable          u:object_r:vendor_default_prop:s0
+tas.smartpa.debug.txdevice         u:object_r:vendor_default_prop:s0
+tas.smartpa.debug.txformat24       u:object_r:vendor_default_prop:s0
+
 # Camera
 vendor.camera.                     u:object_r:vendor_camera_prop:s0
 camera.sensor.rearMain.fuseID      u:object_r:vendor_camera_prop:s0
