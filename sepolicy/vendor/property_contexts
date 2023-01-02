@@ -12,6 +12,7 @@ camera.sensor.rearUltra.fuseID     u:object_r:vendor_camera_prop:s0
 camera.sensor.rearTele.fuseID      u:object_r:vendor_camera_prop:s0
 persist.camera.                    u:object_r:vendor_camera_prop:s0
 persist.vendor.camera.mi.module.   u:object_r:vendor_camera_prop:s0
+persist.vednor.camera.arcsoftlog   u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
 gf.debug.                          u:object_r:vendor_fp_prop:s0
@@ -38,10 +39,15 @@ persist.vendor.radio.meid          u:object_r:vendor_deviceid_prop:s0
 # Xiaomi specific build properties
 ro.boot.hwc                        u:object_r:build_prop:s0
 ro.boot.hwversion                  u:object_r:build_prop:s0
+ro.build.software.version          u:object_r:build_prop:s0
 ro.miui.                           u:object_r:build_prop:s0
 ro.product.mod_device              u:object_r:build_prop:s0
+ro.fota.oem                        u:object_r:exported_system_prop:s0
 
 # Xiaomi thermal daemon
 persist.sys.thermal.               u:object_r:vendor_thermal_normal_prop:s0
 sys.thermal.                       u:object_r:vendor_thermal_normal_prop:s0
 vendor.sys.thermal.                u:object_r:vendor_thermal_normal_prop:s0
+
+# Hardware
+ro.hardware.chipname               u:object_r:exported_default_prop:s0
