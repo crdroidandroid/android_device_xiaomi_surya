@@ -39,3 +39,7 @@ ro.recovery.ui.margin_height=48
 
 # WiFi
 wifi.interface=wlan0
+
+# Telephony
+# Disable handling audio direction changes on IMS calls.
+ro.telephony.handle_audio_direction_changes_between_call_state_changes=false
