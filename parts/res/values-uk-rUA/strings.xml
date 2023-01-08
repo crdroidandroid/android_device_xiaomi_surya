@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Профілі оптимізації</string>
+    <string name="thermal_summary">Встановити профілі оптимізації для оптимальної продуктивності застосунків</string>
+    <string name="thermal_default">За замовчуванням</string>
+    <string name="thermal_benchmark">Бенчмарк</string>
+    <string name="thermal_browser">Браузер</string>
+    <string name="thermal_camera">Камера</string>
+    <string name="thermal_dialer">Дзвінки</string>
+    <string name="thermal_gaming">Ігри</string>
+    <string name="thermal_streaming">Стриминг</string>
+
+    <!-- Dirac settings -->
+    <string name="dirac_title">Поліпшення звуку Dirac</string>
+    <string name="dirac_headset_title">Тип гарнітури</string>
+    <string name="dirac_hifi_enable_title"> Увімкнути Hi-fi</string>
+    <string name="dirac_preset_title">Налаштування звуку</string>
+
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Зменшити шум і спотворення, та поліпшити якість звуку</string>
+
+    <string name="dirac_headset_default">За замовчуванням</string>
+    <string name="dirac_headset_earbuds">Mi Earbuds</string>
+    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
+    <string name="dirac_headset_piston_1">Mi Piston 1</string>
+    <string name="dirac_headset_general">Вкладиші</string>
+    <string name="dirac_headset_general_inear">Вакуумні</string>
+    <string name="dirac_headset_piston_basic">Basic Edition</string>
+    <string name="dirac_headset_piston_2">Mi Piston 2</string>
+    <string name="dirac_headset_piston_standard">Mi Piston 3</string>
+    <string name="dirac_headset_headphone">Mi Headphone</string>
+    <string name="dirac_headset_piston_youth">Youth Edition</string>
+    <string name="dirac_headset_piston_color">Color Edition</string>
+    <string name="dirac_headset_in_ear">Mi In-Ear</string>
+    <string name="dirac_headset_capsule">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
+    <string name="dirac_headset_comfort">Mi Comfort</string>
+    <string name="dirac_headset_reduction_noise">Mi Noise Cancelling (Type-C)</string>
+    <string name="dirac_headset_cancelling">Mi Noise Cancelling (3.5mm)</string>
+    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
+    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
+    <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
+    <string name="dirac_headset_earphone">Mi Earphones</string>
+
+    <string name="dirac_preset_default">За замовчуванням</string>
+    <string name="dirac_preset_rock">Рок</string>
+    <string name="dirac_preset_jazz">Джаз</string>
+    <string name="dirac_preset_pop">Поп</string>
+    <string name="dirac_preset_classical">Класика</string>
+    <string name="dirac_preset_hiphop">Хіп-хоп</string>
+    <string name="dirac_preset_blues">Блюз</string>
+    <string name="dirac_preset_electronic">Електро</string>
+    <string name="dirac_preset_country">Кантрі</string>
+    <string name="dirac_preset_dance">Танцювальна</string>
+    <string name="dirac_preset_metal">Метал</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Очистка динаміку</string>
+    <string name="clear_speaker_summary">Вмикає 30 секундний звук, щоб очистити динамік</string>
+    <string name="clear_speaker_description">Запускає цю функцію один або жва рази, якщо ви виявили, що ваш динамік трішки забруднився пилом. А також установіть максимальну гучність мультимедіа.\n\nЯкщо динамік сильно забруднений, запустіть йю функцію 2-5 раз, при цьому струшуючи пристрій</string>
+
+    <!-- Raise to wake strings-->
+    <string name="raise_to_wake_gesture_title">Підніміть, щоб розбудити</string>
+    <string name="raise_to_wake_gesture_summary">Розбудити пристрій замість пульсуючого </string>
+</resources>

@@ -104,6 +104,10 @@ PRODUCT_PACKAGES += \
     libshim_megvii \
     libpiex_shim
 
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Dexpreopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
