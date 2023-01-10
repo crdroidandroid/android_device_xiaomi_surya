@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+BUILD_BROKEN_DUP_RULES := true
+
 BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/surya
