@@ -119,11 +119,6 @@
         <fqname>@2.1::ISensors/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.soundtrigger</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.2::ISoundTriggerHw/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IOffloadConfig/default</fqname>
