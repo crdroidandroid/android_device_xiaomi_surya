@@ -75,6 +75,17 @@
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
 
+    <!-- Refresh Rate Settings -->
+    <string name="refresh_rate_tile_title">Refresh Rate</string>
+    <string name="refresh_title">App Refresh Rate</string>
+    <string name="refresh_summary">Adjust per-app maximum refresh rate</string>
+    <string name="refresh_default">Default</string>
+    <string name="refresh_low">Low (30Hz)</string>
+    <string name="refresh_moderate">Moderate (50Hz)</string>
+    <string name="refresh_standard">Standard (60Hz)</string>
+    <string name="refresh_high">High (90Hz)</string>
+    <string name="refresh_extreme">Extreme (120Hz)</string>
+
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Clear speaker</string>
     <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
