@@ -67,6 +67,17 @@
     <string name="dirac_preset_dance">Танцювальна</string>
     <string name="dirac_preset_metal">Метал</string>
 
+    <!-- Refresh Rate Settings -->
+    <string name="refresh_rate_tile_title">частота оновлення</string>
+    <string name="refresh_title">Частота оновлення для застосунків</string>
+    <string name="refresh_summary">Налаштування максимальної частоти оновлення для кожного застосунку</string>
+    <string name="refresh_default">За замовчуванням</string>
+    <string name="refresh_low">Низька (30Гц)</string>
+    <string name="refresh_moderate">Середня (50 Гц)</string>
+    <string name="refresh_standard">Стандартна (60Гц)</string>
+    <string name="refresh_high">Висока (90Гц)</string>
+    <string name="refresh_extreme">Плавна (120Гц)</string>
+
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Очистка динаміку</string>
     <string name="clear_speaker_summary">Вмикає 30 секундний звук, щоб очистити динамік</string>

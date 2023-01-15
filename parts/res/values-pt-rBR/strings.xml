@@ -71,6 +71,17 @@
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
 
+    <!-- Refresh Rate Settings -->
+    <string name="refresh_rate_tile_title">Taxa de atualização</string>
+    <string name="refresh_title">Taxa de atualização por Aplicativo</string>
+    <string name="refresh_summary">Defina a taxa de atualização máxima para um aplicativo em específico</string>
+    <string name="refresh_default">Padrão</string>
+    <string name="refresh_low">Baixa (30Hz)</string>
+    <string name="refresh_moderate">Moderada (50Hz)</string>
+    <string name="refresh_standard">Standard (60Hz)</string>
+    <string name="refresh_high">Alta (90Hz)</string>
+    <string name="refresh_extreme">Suave (120Hz)</string>
+
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Limpar auto-falante</string>
     <string name="clear_speaker_summary">Reproduza um áudio de 30 segundos para limpar o alto-falante</string>

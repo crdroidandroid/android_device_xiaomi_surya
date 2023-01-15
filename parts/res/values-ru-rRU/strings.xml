@@ -75,6 +75,17 @@
     <string name="dirac_preset_dance">Танцевальная</string>
     <string name="dirac_preset_metal">Металл</string>
 
+    <!-- Refresh Rate Settings -->
+    <string name="refresh_rate_tile_title">Частота обновления</string>
+    <string name="refresh_title">Частота обновления для приложений</string>
+    <string name="refresh_summary">Настройка максимальной частоты обновления для каждого приложения</string>
+    <string name="refresh_default">По умолчанию</string>
+    <string name="refresh_low">Низкая (30Гц)</string>
+    <string name="refresh_moderate">Средняя (50 Гц)</string>
+    <string name="refresh_standard">Стандартная (60Гц)</string>
+    <string name="refresh_high">Высокая (90Гц)</string>
+    <string name="refresh_extreme">Плавная (120Гц)</string>
+
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Очистка динамика</string>
     <string name="clear_speaker_summary">Включает 30 секундный звук, чтобы очистить динамик</string>
