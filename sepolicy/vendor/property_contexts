@@ -44,6 +44,7 @@ ro.boot.hwversion                  u:object_r:build_prop:s0
 ro.build.software.version          u:object_r:build_prop:s0
 ro.miui.                           u:object_r:build_prop:s0
 ro.product.mod_device              u:object_r:build_prop:s0
+ro.product.marketname              u:object_r:build_prop:s0
 ro.fota.oem                        u:object_r:exported_system_prop:s0
 
 # Xiaomi thermal daemon
