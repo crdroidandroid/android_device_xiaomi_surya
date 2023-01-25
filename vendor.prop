@@ -247,6 +247,11 @@ ro.telephony.default_network=22,22
 # WiFi
 wifi.aware.interface=wifi-aware0
 
+# ZRAM
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=1440
+ro.zram.periodic_wb_delay_hours=24
+
 # Zygote
 zygote.critical_window.minute=10
 
