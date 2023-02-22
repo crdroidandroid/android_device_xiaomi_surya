@@ -48,6 +48,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Camera
 MALLOC_SVELTE_FOR_LIBC32 := true
+MALLOC_SVELTE := true
 
 # Display
 TARGET_USES_COLOR_METADATA := true
