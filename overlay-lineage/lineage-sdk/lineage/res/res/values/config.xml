@@ -86,6 +86,8 @@
         <item>com.microsoft.teams</item>
         <item>com.discord</item>
 	<item>org.thunderdog.challegram</item>
+        <item>org.telegram.plus</item>
+	<item>tw.nekomimi.nekogram</item>
         <item>us.zoom.videomeetings</item>
     </string-array> 
 </resources>
