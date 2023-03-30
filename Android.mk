@@ -45,7 +45,7 @@ EGL_SYMLINKS := $(TARGET_OUT_VENDOR)/lib/
 $(EGL_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	mkdir -p $@
 	$(hide) ln -sf egl/libEGL_adreno.so $@/libEGL_adreno.so
-	$(hide) ln -sf egl/libGLESv2_adreno $@/libGLESv2_adreno
+	$(hide) ln -sf egl/libGLESv2_adreno.so $@/libGLESv2_adreno.so
 
 ALL_DEFAULT_INSTALLED_MODULES += $(EGL_SYMLINKS)
 
@@ -53,7 +53,7 @@ EGL64_SYMLINKS := $(TARGET_OUT_VENDOR)/lib64/
 $(EGL64_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	mkdir -p $@
 	$(hide) ln -sf egl/libEGL_adreno.so $@/libEGL_adreno.so
-	$(hide) ln -sf egl/libGLESv2_adreno $@/libGLESv2_adreno
+	$(hide) ln -sf egl/libGLESv2_adreno.so $@/libGLESv2_adreno.so
 
 ALL_DEFAULT_INSTALLED_MODULES += $(EGL64_SYMLINKS)
 
