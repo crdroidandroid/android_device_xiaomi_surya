@@ -153,12 +153,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -vendor/lib64/libcamera_dirty.so
 -vendor/lib64/libcamera_nn_stub.so
 -vendor/lib64/libcamera_scene.so
--vendor/lib64/libcamxfdalgov7.so
--vendor/lib64/libcamxfdalgov8.so
--vendor/lib64/libcamxfdengine.so
--vendor/lib64/libcamxstatscore.so
--vendor/lib64/libcamxswprocessalgo.so
--vendor/lib64/libcamxtintlessalgo.so
 -vendor/lib64/libcom.qti.chinodeutils.so
 -vendor/lib64/libdng_sdk2vendor.so
 -vendor/lib64/libft2vendor.so
@@ -186,6 +180,20 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -vendor/lib64/libvidhance.so
 -vendor/lib64/libxmi_high_dynamic_range.so
 -vendor/lib64/libxml2_vendor.so
+
+# Camera (CamX)
+vendor/lib/libcamxfdalgov7.so
+vendor/lib/libcamxfdalgov8.so
+vendor/lib/libcamxfdengine.so
+vendor/lib/libcamxstatscore.so
+vendor/lib/libcamxswprocessalgo.so
+vendor/lib/libcamxtintlessalgo.so
+vendor/lib64/libcamxfdalgov7.so
+vendor/lib64/libcamxfdalgov8.so
+vendor/lib64/libcamxfdengine.so
+vendor/lib64/libcamxstatscore.so
+vendor/lib64/libcamxswprocessalgo.so
+vendor/lib64/libcamxtintlessalgo.so
 
 # Camera components
 -vendor/lib64/camera/components/com.almalence.node.sr.so
