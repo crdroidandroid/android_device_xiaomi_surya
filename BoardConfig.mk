@@ -180,7 +180,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 TARGET_SCREEN_DENSITY := 440
 
 # Sepolicy
-SELINUX_IGNORE_NEVERALLOWS := true
 TARGET_SEPOLICY_DIR := msmsteppe
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 

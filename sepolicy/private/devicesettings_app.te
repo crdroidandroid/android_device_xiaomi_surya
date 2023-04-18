@@ -35,6 +35,3 @@ allow devicesettings_app {
   sysfs_thermal
   sysfs_vibrator
 }:{ file lnk_file } rw_file_perms;
-
-# Allow devicesettings_app read default props
-allow devicesettings_app default_prop:file { read };
