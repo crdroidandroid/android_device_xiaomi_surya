@@ -87,6 +87,7 @@ void vendor_load_properties() {
     std::string model;
     std::string name;
     std::string device;
+    std::string mod_device;
     std::string fingerprint;
     std::string flavor;
     std::string description;
@@ -96,12 +97,14 @@ void vendor_load_properties() {
         model = "M2007J20CI";
         name = "karna_eea";
         device = "karna";
+	mod_device = "karna_eea_global";
         fingerprint = "POCO/karna_eea/karna:12/RKQ1.211019.001/V14.0.4.0.SJGEUXM:user/release-keys";
         description = "karna_eea-user 12 RKQ1.211019.001 V14.0.4.0.SJGEUXM release-keys";
         marketname = "POCO X3";
     } else {
         name = "surya_eea";
         device = "surya";
+	mod_device = "surya_eea_global";
         fingerprint = "POCO/surya_eea/surya:12/RKQ1.211019.001/V14.0.4.0.SJGEUXM:user/release-keys";
         description = "surya_eea-user 12 RKQ1.211019.001 V14.0.4.0.SJGEUXM release-keys";
         marketname = "POCO X3 NFC";
@@ -121,6 +124,7 @@ void vendor_load_properties() {
     property_override("ro.build.description", description.c_str());
     property_override("ro.build.flavor", flavor.c_str());
     property_override("ro.build.product", device.c_str());
+    property_override("ro.product.mod_device", mod_device.c_str());
     property_override("ro.boot.hardware.revision", hardware_revision.c_str());
     property_override("bluetooth.device.default_name", marketname.c_str());
     property_override("vendor.usb.product_string", marketname.c_str());
