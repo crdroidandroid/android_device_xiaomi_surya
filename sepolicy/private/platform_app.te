@@ -1,0 +1,6 @@
+allow platform_app {
+    DisplayFeatureControl
+    miui_multi_display
+    perfshielder
+    ProcessManager
+}:service_manager find;

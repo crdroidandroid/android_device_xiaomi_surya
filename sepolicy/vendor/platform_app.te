@@ -1,0 +1,4 @@
+allow platform_app proc_stat:file read;
+
+get_prop(platform_app, vendor_display_prop)
+get_prop(platform_app, vendor_audio_prop)
