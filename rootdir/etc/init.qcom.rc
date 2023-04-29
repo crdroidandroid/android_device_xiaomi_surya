@@ -200,6 +200,9 @@ on post-fs-data
 on property:sys.boot_completed=1
     chown media audio /sys/kernel/wdsp0/boot
 
+    # Set swappiness to 100 for all targets
+    write /proc/sys/vm/swappiness 100
+
 on property:vendor.netflix.bsp_rev=*
     setprop ro.netflix.bsp_rev ${vendor.netflix.bsp_rev}
 
