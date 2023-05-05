@@ -93,6 +93,12 @@ const char LOC_PATH_ANT_CORR[] = LOC_PATH_ANT_CORR_STR;
 const char LOC_PATH_SLIM_CONF[] = LOC_PATH_SLIM_CONF_STR;
 const char LOC_PATH_VPE_CONF[] = LOC_PATH_VPE_CONF_STR;
 
+bool isXtraDaemonEnabled() {
+    bool enabled = property_get_bool("persist.sys.xtra-daemon.enabled", false);
+    LOC_LOGe("xtra-daemon enabled: %d\n", enabled);
+    return enabled;
+}
+
 bool isVendorEnhanced() {
     return sVendorEnhanced;
 }
@@ -811,6 +817,13 @@ int loc_read_process_conf(const char* conf_file_name, uint32_t * process_count_p
            !baseband_length || !status_length || !auto_platform_length || !soc_id_list_length) {
             LOC_LOGE("%s:%d]: Error: i: %d; One of the parameters not specified in conf file",
                      __func__, __LINE__, i);
+            continue;
+        }
+
+        if (strcmp(conf.proc_name, "xtra-daemon") == 0 && !isXtraDaemonEnabled()) {
+            LOC_LOGE("%s:%d]: Process xtra-daemon is disabled via property",
+                     __func__, __LINE__);
+            child_proc[j].proc_status = DISABLED_FROM_CONF;
             continue;
         }
 
