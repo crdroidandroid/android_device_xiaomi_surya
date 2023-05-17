@@ -11,6 +11,7 @@
 /data/per_boot(/.*)?                                                 u:object_r:per_boot_file:s0
 
 # Display
+/sys/class/drm/sde-crtc-0/measured_fps                                                           u:object_r:vendor_sysfs_graphics:s0
 /sys/devices/platform/soc/[a-f0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info u:object_r:vendor_sysfs_graphics:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/hbm                   u:object_r:sysfs_hbm:s0
 
