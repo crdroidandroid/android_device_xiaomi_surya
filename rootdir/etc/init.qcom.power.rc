@@ -93,6 +93,7 @@ on property:init.svc.vendor.charger=running
     chown system system /sys/class/leds/white/brightness
     write /sys/class/leds/white/brightness 255
 
+    start vendor.thermal-engine
     start vendor.hvdcp_opti
     start vendor.power_off_alarm
 
@@ -220,6 +221,16 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
     group system
     oneshot
+
+service vendor.thermal-engine /vendor/bin/thermal-engine
+    class main
+    user root
+    socket thermal-send-client stream 0666 system system
+    socket thermal-recv-client stream 0660 system system
+    socket thermal-recv-passive-client stream 0666 system system
+    socket thermal-send-rule stream 0660 system system
+    group root
+    writepid /dev/cpuset/system-background/tasks
 
 service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     class main
