@@ -95,18 +95,18 @@ void vendor_load_properties() {
 
     if (hwname == "karna") {
         model = "M2007J20CI";
-        name = "karna_eea";
+        name = "karna_global";
         device = "karna";
-	mod_device = "karna_eea_global";
-        fingerprint = "POCO/karna_eea/karna:12/RKQ1.211019.001/V14.0.4.0.SJGEUXM:user/release-keys";
-        description = "karna_eea-user 12 RKQ1.211019.001 V14.0.4.0.SJGEUXM release-keys";
+	mod_device = "karna_global";
+        fingerprint = "POCO/karna_global/karna:12/RKQ1.211019.001/V14.0.1.0.SJGMIXM:user/release-keys";
+        description = "karna_global-user 12 RKQ1.211019.001 V14.0.1.0.SJGMIXM release-keys";
         marketname = "POCO X3";
     } else {
-        name = "surya_eea";
+        name = "surya_global";
         device = "surya";
-	mod_device = "surya_eea_global";
-        fingerprint = "POCO/surya_eea/surya:12/RKQ1.211019.001/V14.0.4.0.SJGEUXM:user/release-keys";
-        description = "surya_eea-user 12 RKQ1.211019.001 V14.0.4.0.SJGEUXM release-keys";
+	mod_device = "surya_global";
+        fingerprint = "POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.1.0.SJGMIXM:user/release-keys";
+        description = "surya_global-user 12 RKQ1.211019.001 V14.0.1.0.SJGMIXM release-keys";
         marketname = "POCO X3 NFC";
 
         if (region == "THAI" || region == "THAI_PA")
