@@ -14,38 +14,38 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay@2.1-service.surya"
+#define LOG_TAG "vendor.lineage.livedisplay@2.0-service.surya"
 
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>
 #include <hidl/HidlTransportSupport.h>
-#include <livedisplay/sdm/PictureAdjustment.h>
 
 #include "SunlightEnhancement.h"
+#include "livedisplay/sdm/SDMController.h"
 
-using ::vendor::lineage::livedisplay::V2_0::sdm::PictureAdjustment;
+using android::OK;
+using android::sp;
+using android::status_t;
+
+using ::vendor::lineage::livedisplay::V2_0::ISunlightEnhancement;
+using ::vendor::lineage::livedisplay::V2_0::implementation::SunlightEnhancement;
 using ::vendor::lineage::livedisplay::V2_0::sdm::SDMController;
-using ::vendor::lineage::livedisplay::V2_1::ISunlightEnhancement;
-using ::vendor::lineage::livedisplay::V2_1::implementation::SunlightEnhancement;
 
 int main() {
-    android::sp<ISunlightEnhancement> sunlightEnhancement = new SunlightEnhancement();
-
+    status_t status = OK;
     std::shared_ptr<SDMController> controller = std::make_shared<SDMController>();
-    android::sp<PictureAdjustment> pictureAdjustment = new PictureAdjustment(controller);
-
+    sp<SunlightEnhancement> se = new SunlightEnhancement();
     android::hardware::configureRpcThreadpool(1, true /*callerWillJoin*/);
 
-    if (pictureAdjustment->registerAsService() != android::OK) {
-        LOG(ERROR) << "Cannot register picture adjustment HAL service.";
-        return 1;
-    }
-    if (sunlightEnhancement->registerAsService() != android::OK) {
-        LOG(ERROR) << "Cannot register sunlight enhancement HAL service.";
+    // SunlightEnhancement service
+    status = se->registerAsService();
+    if (status != OK) {
+        LOG(ERROR) << "Could not register service for LiveDisplay HAL SunlightEnhancement Iface ("
+                   << status << ")";
         return 1;
     }
 
-    LOG(INFO) << "LiveDisplay HAL service is ready.";
+    LOG(INFO) << "LiveDisplay HAL service ready.";
 
     android::hardware::joinRpcThreadpool();
 

@@ -1,9 +1,0 @@
-on boot
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/hbm
-    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/hbm
-
-service vendor.livedisplay-hal-2-1 /vendor/bin/hw/vendor.lineage.livedisplay@2.1-service.surya
-    class late_start
-    user system
-    group system
-    task_profiles ServiceCapacityLow

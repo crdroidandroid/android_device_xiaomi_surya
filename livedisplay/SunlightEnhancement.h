@@ -14,34 +14,34 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_LINEAGE_LIVEDISPLAY_V2_1_SUNLIGHTENHANCEMENT_H
-#define VENDOR_LINEAGE_LIVEDISPLAY_V2_1_SUNLIGHTENHANCEMENT_H
+#ifndef VENDOR_LINEAGE_LIVEDISPLAY_V2_0_SUNLIGHTENHANCEMENT_H
+#define VENDOR_LINEAGE_LIVEDISPLAY_V2_0_SUNLIGHTENHANCEMENT_H
 
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
-#include <vendor/lineage/livedisplay/2.1/ISunlightEnhancement.h>
+#include <vendor/lineage/livedisplay/2.0/ISunlightEnhancement.h>
 
 namespace vendor {
 namespace lineage {
 namespace livedisplay {
-namespace V2_1 {
+namespace V2_0 {
 namespace implementation {
 
-using ::android::sp;
 using ::android::hardware::Return;
 using ::android::hardware::Void;
+using ::android::sp;
 
 class SunlightEnhancement : public ISunlightEnhancement {
   public:
-    // Methods from ::vendor::lineage::livedisplay::V2_1::ISunlightEnhancement follow.
+    // Methods from ::vendor::lineage::livedisplay::V2_0::ISunlightEnhancement follow.
     Return<bool> isEnabled() override;
     Return<bool> setEnabled(bool enabled) override;
 };
 
 }  // namespace implementation
-}  // namespace V2_1
+}  // namespace V2_0
 }  // namespace livedisplay
 }  // namespace lineage
 }  // namespace vendor
 
-#endif  // VENDOR_LINEAGE_LIVEDISPLAY_V2_1_SUNLIGHTENHANCEMENT_H
+#endif  // VENDOR_LINEAGE_LIVEDISPLAY_V2_0_SUNLIGHTENHANCEMENT_H

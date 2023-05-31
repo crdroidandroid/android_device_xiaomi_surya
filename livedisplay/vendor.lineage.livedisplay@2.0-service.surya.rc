@@ -1,0 +1,10 @@
+on boot
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/hbm
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/hbm
+
+service vendor.livedisplay-hal-2-0 /vendor/bin/hw/vendor.lineage.livedisplay@2.0-service.surya
+    interface vendor.lineage.livedisplay@2.0::IPictureAdjustment default
+    interface vendor.lineage.livedisplay@2.0::ISunlightEnhancement default
+    class late_start
+    user system
+    group system

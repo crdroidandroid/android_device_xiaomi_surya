@@ -14,13 +14,12 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.1-service.surya",
+    name: "vendor.lineage.livedisplay@2.0-service.surya",
     defaults: ["hidl_defaults"],
-    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.surya.xml"],
-    init_rc: ["vendor.lineage.livedisplay@2.1-service.surya.rc"],
+    init_rc: ["vendor.lineage.livedisplay@2.0-service.surya.rc"],
+    vintf_fragments: ["vendor.lineage.livedisplay@2.0-service.surya.xml"],
     relative_install_path: "hw",
     srcs: [
-        ":vendor.lineage.livedisplay@2.0-sdm-pa",
         ":vendor.lineage.livedisplay@2.0-sdm-utils",
         "SunlightEnhancement.cpp",
         "service.cpp",
@@ -32,7 +31,6 @@ cc_binary {
         "libhidlbase",
         "libutils",
         "vendor.lineage.livedisplay@2.0",
-        "vendor.lineage.livedisplay@2.1",
     ],
     header_libs: [
         "vendor.lineage.livedisplay@2.0-sdm-headers",

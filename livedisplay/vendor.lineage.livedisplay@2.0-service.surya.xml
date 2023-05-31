@@ -2,6 +2,10 @@
     <hal format="hidl">
         <name>vendor.lineage.livedisplay</name>
         <transport>hwbinder</transport>
-        <fqname>@2.1::ISunlightEnhancement/default</fqname>
+        <version>2.0</version>
+        <interface>
+            <name>ISunlightEnhancement</name>
+            <instance>default</instance>
+        </interface>
     </hal>
 </manifest>

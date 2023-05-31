@@ -28,7 +28,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.light-service\.xiaomi              u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr   u:object_r:hal_power_default_exec:s0
-/vendor/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.surya      u:object_r:hal_lineage_livedisplay_qti_exec:s0
+/vendor/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.surya      u:object_r:hal_lineage_livedisplay_qti_exec:s0
 
 # Haptic
 /sys/devices/platform/soc/884000.i2c/i2c-3/3-005a/ulevel             u:object_r:sysfs_vibrator:s0

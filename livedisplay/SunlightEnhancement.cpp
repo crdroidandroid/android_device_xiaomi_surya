@@ -16,39 +16,36 @@
 
 #define LOG_TAG "SunlightEnhancementService"
 
-#include <android-base/file.h>
-#include <android-base/logging.h>
-#include <android-base/strings.h>
-
 #include "SunlightEnhancement.h"
+#include <android-base/logging.h>
+#include <fstream>
 
 namespace vendor {
 namespace lineage {
 namespace livedisplay {
-namespace V2_1 {
+namespace V2_0 {
 namespace implementation {
 
-static constexpr const char* kHbmStatusPath = "/sys/devices/platform/soc/soc:qcom,dsi-display/hbm";
+static constexpr const char* kHbmPath =
+    "/sys/devices/platform/soc/soc:qcom,dsi-display/hbm";
 
 Return<bool> SunlightEnhancement::isEnabled() {
-    std::string buf;
-    if (!android::base::ReadFileToString(kHbmStatusPath, &buf)) {
-        LOG(ERROR) << "Failed to read " << kHbmStatusPath;
-        return false;
-    }
-    return std::stoi(android::base::Trim(buf)) == 1;
+    std::ifstream file(kHbmPath);
+    int result = -1;
+    file >> result;
+    LOG(DEBUG) << "Got result " << result << " fail " << file.fail();
+    return !file.fail() && result > 0;
 }
 
 Return<bool> SunlightEnhancement::setEnabled(bool enabled) {
-    if (!android::base::WriteStringToFile((enabled ? "1" : "0"), kHbmStatusPath)) {
-        LOG(ERROR) << "Failed to write " << kHbmStatusPath;
-        return false;
-    }
-    return true;
+    std::ofstream file(kHbmPath);
+    file << (enabled ? "1" : "0");
+    LOG(DEBUG) << "setEnabled fail " << file.fail();
+    return !file.fail();
 }
 
 }  // namespace implementation
-}  // namespace V2_1
+}  // namespace V2_0
 }  // namespace livedisplay
 }  // namespace lineage
 }  // namespace vendor
