@@ -82,30 +82,32 @@ void vendor_load_properties() {
     std::string model;
     std::string device;
     std::string fingerprint;
+    std::string mod_device;
     std::string description;
     std::string name;
-    std::string mod_device;
     std::string marketname;
 
     if (hwname == "karna") {
-        device = "karna";
         model = "M2007J20CI";
-        name = "karna_in";
-        fingerprint = "POCO/karna_in/karna:12/RKQ1.211019.001/V13.0.4.0.SJGEUXM:user/release-keys";
-        description = "karna_in-user 12 RKQ1.211019.001 V13.0.4.0.SJGEUXM release-keys";
+        name = "karna_global";
+        device = "karna";
+	mod_device = "karna_global";
+        fingerprint = "POCO/karna_global/karna:12/RKQ1.211019.001/V14.0.1.0.SJGMIXM:user/release-keys";
+        description = "karna_global-user 12 RKQ1.211019.001 V14.0.1.0.SJGMIXM release-keys";
         marketname = "POCO X3";
-   } else {
+    } else {
+        name = "surya_global";
         device = "surya";
-        name = "surya";
-        fingerprint = "POCO/surya_eea/surya:12/RKQ1.211019.001/V13.0.4.0.SJGEUXM:user/release-keys";
-        description = "surya_eea-user 12 RKQ1.211019.001 V13.0.4.0.SJGEUXM release-keys";
+	mod_device = "surya_global";
+        fingerprint = "POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.1.0.SJGMIXM:user/release-keys";
+        description = "surya_global-user 12 RKQ1.211019.001 V14.0.1.0.SJGMIXM release-keys";
         marketname = "POCO X3 NFC";
 
         if (region == "THAI" || region == "THAI_PA")
             model = "M2007J20CT";
         else
             model = "M2007J20CG";
-   }
+    }
 
     set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("brand", "POCO");
@@ -116,6 +118,7 @@ void vendor_load_properties() {
     property_override("ro.build.product", device.c_str());
     property_override("ro.build.board", device.c_str());
     property_override("ro.build.description", description.c_str());
+    property_override("ro.product.mod_device", mod_device.c_str());
     property_override("ro.boot.hardware.revision", hardware_revision.c_str());
     property_override("bluetooth.device.default_name", marketname.c_str());
     property_override("vendor.usb.product_string", marketname.c_str());
