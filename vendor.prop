@@ -214,6 +214,7 @@ ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.va_aosp.support=1
 
 # Radio
+persist.radio.multisim.config=dsds
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_ltd_sys_ind=1
 persist.vendor.radio.dynamic_sar=1
@@ -224,7 +225,12 @@ persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.report_codec=1
+ro.telephony.default_cdma_sub=0
 ro.telephony.default_network=22,22
+telephony.lteOnCdmaDevice=1
+
+# RCS
+persist.rcs.supported=1
 
 # WiFi
 wifi.aware.interface=wifi-aware0

@@ -19,14 +19,8 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
 
-# RCS
-persist.rcs.supported=1
-
 # Radio
-persist.radio.multisim.config=dsds
 ril.subscription.types=RUIM
-ro.telephony.default_cdma_sub=0
-telephony.lteOnCdmaDevice=1
 
 # Recovery
 ro.recovery.ui.margin_height=48
