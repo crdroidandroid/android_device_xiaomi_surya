@@ -590,4 +590,6 @@
         <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
     </string-array>
 
+    <!-- For Enabling Battery Heath -->
+    <bool name="config_supportBatteryHealth">true</bool>
 </resources>
