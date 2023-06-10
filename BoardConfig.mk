@@ -188,7 +188,7 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Vendor security patch level
-VENDOR_SECURITY_PATCH := 2023-03-01
+VENDOR_SECURITY_PATCH := 2023-04-01
 
 # Trust
 TARGET_TRUST_USB_CONTROL_PATH := /sys/devices/platform/soc/a600000.ssusb/usb_data_enabled
