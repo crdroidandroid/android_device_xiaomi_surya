@@ -1,1 +1,3 @@
 allow system_server proc_last_kmsg:file { open read getattr };
+
+r_dir_file(system_server, vendor_sysfs_battery_supply)
