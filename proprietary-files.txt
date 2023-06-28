@@ -1056,6 +1056,9 @@ system_ext/etc/wfdconfigsink.xml|cb78df66948314a75080a4161321fb3111a0785a
 -system_ext/lib64/libwfduibcsrcinterface.so|69400030817aa8f6994a525b027bb3dd7cabd0d4
 system_ext/priv-app/WfdService/WfdService.apk|1abb2c2c249d2e99aa6bbdb972736e52ba594e56
 
+# WiFi Display (vendor) - from lemonadep - TP1A.220624.003
+vendor/etc/wfdconfig.xml|4f863ac9a71bafff8afc14e8fab26af979bbb1d6
+
 # WiFi Display (vendor)
 -vendor/bin/wfdvndservice
 -vendor/bin/wifidisplayhalservice
@@ -1064,7 +1067,6 @@ vendor/etc/init/wfdvndservice.rc
 vendor/etc/seccomp_policy/wfdhdcphalservice.policy
 vendor/etc/seccomp_policy/wfdvndservice.policy
 vendor/etc/seccomp_policy/wifidisplayhalservice.policy
-vendor/etc/wfdconfig.xml
 -vendor/lib/libFileMux_proprietary.so
 -vendor/lib/libmmrtpdecoder_proprietary.so
 -vendor/lib/libmmrtpencoder_proprietary.so
