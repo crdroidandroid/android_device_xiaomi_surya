@@ -407,8 +407,8 @@ vendor/lib64/vendor.qti.hardware.camera.device@3.5.so
 
 # Camera Megvii
 vendor/etc/camera/megviifacepp_0_5_2_model
--vendor/lib64/libMegviiFacepp-0.5.2.so
--vendor/lib64/libmegface.so
+vendor/lib64/libMegviiFacepp-0.5.2.so
+vendor/lib64/libmegface.so
 
 # Charger
 -vendor/bin/hvdcp_opti
