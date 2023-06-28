@@ -1,3 +1,8 @@
+# Camera
+camera.disable_zsl_mode=1
+persist.vendor.camera.privapp.list=org.lineageos.aperture,com.android.camera
+vendor.camera.aux.packagelist=org.lineageos.aperture,com.android.camera
+
 # LMKD
 ro.config.low_ram=false
 ro.lmk.log_stats=true
