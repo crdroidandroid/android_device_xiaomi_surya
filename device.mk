@@ -112,10 +112,6 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor
 
 PRODUCT_PACKAGES += \
-    libMegviiFacepp-0.5.2 \
-    libmegface
-
-PRODUCT_PACKAGES += \
     libpiex_shim
 
 PRODUCT_COPY_FILES += \
