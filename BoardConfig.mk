@@ -8,10 +8,6 @@ BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/surya
 
-ifeq ($(WITH_GMS),true)
-BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-endif
-
 # Inherit from proprietary files
 include vendor/xiaomi/surya/BoardConfigVendor.mk
 
