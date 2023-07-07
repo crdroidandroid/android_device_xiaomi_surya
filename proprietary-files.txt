@@ -304,6 +304,11 @@ vendor/etc/camera/watermark_font_2300_3199.dat
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# Camera Megvii
+vendor/etc/camera/megviifacepp_0_5_2_model
+vendor/lib64/libMegviiFacepp-0.5.2.so
+vendor/lib64/libmegface.so
+
 # Camera sensors
 -vendor/lib64/camera/com.qti.sensor.ofilm_hi259.so
 -vendor/lib64/camera/com.qti.sensor.ofilm_imx682.so
