@@ -1,4 +1,4 @@
-# These proprietary files are extracted from POCO X3 NFC (codenamed `surya`) MIUI V14.0.1.0.SJGTRXM, unless pinned
+# These proprietary files are extracted from POCO X3 NFC (codenamed `surya`) MIUI V14.0.2.0.SJGMIXM, unless pinned
 
 # ADSP
 -vendor/bin/adsprpcd

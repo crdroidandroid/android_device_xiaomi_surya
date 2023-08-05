@@ -100,10 +100,10 @@ void vendor_load_properties() {
         description = "karna_in-user 12 RKQ1.211019.001 V13.0.2.0.SJGINXM release-keys";
         marketname = "POCO X3";
     } else {
-        name = "surya_tr";
+        name = "surya_global";
         device = "surya";
-        fingerprint = "POCO/surya_tr/surya:12/RKQ1.211019.001/V14.0.1.0.SJGTRXM:user/release-keys";
-        description = "surya_tr-user 12 RKQ1.211019.001 V14.0.1.0.SJGIDXM release-keys";
+        fingerprint = "POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.2.0.SJGMIXM:user/release-keys";
+        description = "surya_global-user 12 RKQ1.211019.001 V14.0.2.0.SJGMIXMrelease-keys";
         marketname = "POCO X3 NFC";
 
         if (region == "THAI" || region == "THAI_PA")
