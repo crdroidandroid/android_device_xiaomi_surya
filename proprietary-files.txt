@@ -392,7 +392,6 @@ vendor/etc/init/cnd.rc
 -vendor/lib64/vendor.qti.hardware.data.lce@1.0.so
 -vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 -vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so
--vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 -vendor/lib64/vendor.qti.latency@2.0.so
 -vendor/lib64/vendor.qti.latency@2.1.so
 
