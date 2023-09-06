@@ -11,6 +11,9 @@
          is no longer indicative, and a separate config now exists for each band -->
     <bool name="config_wifi5ghzSupport">true</bool>
 
+    <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
+    <bool name="config_wifi6ghzSupport">true</bool>
+
     <!-- Integer indicating maximum hardware supported client number of soft ap -->
     <integer name="config_wifiHardwareSoftapMaxClientCount">32</integer>
 
