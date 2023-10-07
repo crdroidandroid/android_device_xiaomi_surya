@@ -785,6 +785,7 @@ vendor/etc/init/netmgrd.rc
 vendor/etc/init/qcrild.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
+-vendor/lib64/deviceInfoServiceModule.so
 -vendor/lib64/libconfigdb.so
 -vendor/lib64/libdsi_netctrl.so
 -vendor/lib64/liblqe.so
