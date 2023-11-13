@@ -1,9 +1,6 @@
 # Bluetooth
 vendor.bluetooth.soc=cherokee
 
-# Charger
-ro.charger.enable_suspend=true
-
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
