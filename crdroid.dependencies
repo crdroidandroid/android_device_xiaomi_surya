@@ -1,0 +1,18 @@
+[
+   {
+      "repository":"crdroidandroid/android_kernel_xiaomi_surya",
+      "target_path":"kernel/xiaomi/surya",
+      "branch":"16.0"
+   },
+   {
+      "repository":"crdroidandroid/android_hardware_xiaomi",
+      "target_path":"hardware/xiaomi",
+      "branch":"16.0"
+   },
+   {
+      "repository":"crdroidandroid/proprietary_vendor_xiaomi_surya",
+      "target_path":"vendor/xiaomi/surya",
+      "remote":"crdroid-gitlab",
+      "branch":"16.0"
+   }
+]
