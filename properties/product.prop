@@ -1,2 +1,5 @@
 # LMKD
 ro.config.low_ram=false
+
+# eBPF
+ro.bpf.kver_override=5.4.186
