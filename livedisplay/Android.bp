@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2019-2020 The LineageOS Project
+// Copyright (C) 2019-2025 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,27 +14,25 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.1-service.surya",
-    defaults: ["hidl_defaults"],
-    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.surya.xml"],
-    init_rc: ["vendor.lineage.livedisplay@2.1-service.surya.rc"],
+    name: "vendor.lineage.livedisplay-service.surya",
+    vintf_fragments: ["vendor.lineage.livedisplay-service.surya.xml"],
+    init_rc: ["vendor.lineage.livedisplay-service.surya.rc"],
     relative_install_path: "hw",
     srcs: [
-        ":vendor.lineage.livedisplay@2.0-sdm-pa",
-        ":vendor.lineage.livedisplay@2.0-sdm-utils",
+        ":vendor.lineage.livedisplay-sdm-pa",
+        ":vendor.lineage.livedisplay-sdm-utils",
         "SunlightEnhancement.cpp",
         "service.cpp",
     ],
     vendor: true,
     shared_libs: [
         "libbase",
+        "libbinder_ndk",
         "libbinder",
-        "libhidlbase",
         "libutils",
-        "vendor.lineage.livedisplay@2.0",
-        "vendor.lineage.livedisplay@2.1",
+        "vendor.lineage.livedisplay-V1-ndk",
     ],
     header_libs: [
-        "vendor.lineage.livedisplay@2.0-sdm-headers",
+        "vendor.lineage.livedisplay-sdm-headers",
     ],
 }

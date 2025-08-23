@@ -1,53 +1,48 @@
 /*
- * Copyright (C) 2019-2020 The LineageOS Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * SPDX-FileCopyrightText: 2019-2025 The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay@2.1-service.surya"
+#define LOG_TAG "vendor.lineage.livedisplay-service.surya"
 
 #include <android-base/logging.h>
+#include <android/binder_manager.h>
+#include <android/binder_process.h>
 #include <binder/ProcessState.h>
-#include <hidl/HidlTransportSupport.h>
 #include <livedisplay/sdm/PictureAdjustment.h>
 
 #include "SunlightEnhancement.h"
 
-using ::vendor::lineage::livedisplay::V2_0::sdm::PictureAdjustment;
-using ::vendor::lineage::livedisplay::V2_0::sdm::SDMController;
-using ::vendor::lineage::livedisplay::V2_1::ISunlightEnhancement;
-using ::vendor::lineage::livedisplay::V2_1::implementation::SunlightEnhancement;
+using ::aidl::vendor::lineage::livedisplay::SunlightEnhancement;
+using ::aidl::vendor::lineage::livedisplay::sdm::PictureAdjustment;
+using ::aidl::vendor::lineage::livedisplay::sdm::SDMController;
 
 int main() {
-    android::sp<ISunlightEnhancement> sunlightEnhancement = new SunlightEnhancement();
+    android::ProcessState::self()->setThreadPoolMaxThreadCount(1);
+    android::ProcessState::self()->startThreadPool();
 
     std::shared_ptr<SDMController> controller = std::make_shared<SDMController>();
-    android::sp<PictureAdjustment> pictureAdjustment = new PictureAdjustment(controller);
-
-    android::hardware::configureRpcThreadpool(1, true /*callerWillJoin*/);
-
-    if (pictureAdjustment->registerAsService() != android::OK) {
+    std::shared_ptr<PictureAdjustment> pictureAdjustment =
+            ndk::SharedRefBase::make<PictureAdjustment>(controller);
+    std::string instance = std::string() + PictureAdjustment::descriptor + "/default";
+    if (AServiceManager_addService(pictureAdjustment->asBinder().get(), instance.c_str()) !=
+        STATUS_OK) {
         LOG(ERROR) << "Cannot register picture adjustment HAL service.";
         return 1;
     }
-    if (sunlightEnhancement->registerAsService() != android::OK) {
+
+    std::shared_ptr<SunlightEnhancement> sunlightEnhancement =
+            ndk::SharedRefBase::make<SunlightEnhancement>();
+    instance = std::string() + SunlightEnhancement::descriptor + "/default";
+    if (AServiceManager_addService(sunlightEnhancement->asBinder().get(), instance.c_str()) !=
+        STATUS_OK) {
         LOG(ERROR) << "Cannot register sunlight enhancement HAL service.";
         return 1;
     }
 
     LOG(INFO) << "LiveDisplay HAL service is ready.";
 
-    android::hardware::joinRpcThreadpool();
+    ABinderProcess_joinThreadPool();
 
     LOG(ERROR) << "LiveDisplay HAL service failed to join thread pool.";
     return 1;
