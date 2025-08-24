@@ -354,6 +354,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/qcom-caf/common/libqti-perfd-client \
+    hardware/qcom/wlan \
     hardware/xiaomi \
     vendor/qcom/opensource/usb/etc
 
