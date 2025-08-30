@@ -79,9 +79,6 @@ BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 MALLOC_SVELTE := true
 MALLOC_SVELTE_FOR_LIBC32 := true
 
-# Media
-TARGET_USES_ION := true
-
 # Partitions
 BOARD_USES_METADATA_PARTITION := true
 
