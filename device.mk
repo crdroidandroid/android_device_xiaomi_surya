@@ -68,7 +68,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
 
-$(call soong_config_set,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
+$(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
@@ -83,7 +83,7 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Camera
-$(call soong_config_set,camera,override_format_from_reserved,true)
+$(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -234,7 +234,7 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
 $(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/input_suspend)
-$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
